@@ -1,0 +1,52 @@
+@import 'reset.scss';
+@import 'root.scss';
+@import 'slider.scss';
+@import 'about.scss';
+@import 'reservations.scss';
+
+
+body {
+  margin: 0;
+  font-family: 'Cormorant Upright', serif;
+  font-family: 'Open Sans', sans-serif;
+  background: $page-color;
+}
+
+h1 {
+  font-size: 70px;
+  color: blue;
+  font-family: 'Cormorant Upright', serif;
+}
+
+.title {
+  font-size: 64px;
+  font-family: 'Cormorant Upright', serif;
+  color: $accent;
+  line-height: 130%;
+  font-weight: 600;
+}
+
+.description {
+  font-family: 'Open Sans';
+  color: $description;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  padding: 0 0 32px 0;
+}
+
+.button {
+  font-family: 'Cormorant Upright';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  display: inline-block;
+  padding: 8px 0;
+  width: 157px;
+  text-align: center;
+  background: $accent;
+  color: $page-color;
+}
+
+@import 'menu.scss';

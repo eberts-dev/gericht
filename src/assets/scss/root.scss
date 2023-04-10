@@ -1,0 +1,27 @@
+// root colors
+
+$page-color: #0C0B08;
+$title: #ffffff;
+$accent: #DCCA87;
+$accent-20: #DCCA8720;
+$description: #AAAAAA;
+
+// global grid
+
+$lg: 1680px;
+$md: 1440px;
+$sm: 960px;
+$xs: 480px;
+
+// global font-size
+
+$text-m: 16px;
+$text-l: 23px;
+
+// global styles
+
+.wrapper {
+  max-width: $lg;
+  padding: 0 20px;
+  margin: 0 auto;
+}

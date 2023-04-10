@@ -1,0 +1,187 @@
+@import 'root.scss';
+
+.reservations {
+  background: $page-color;
+}
+
+.reservations__container {
+  width: 1366px;
+  margin:  157px auto;
+  border: 1px solid $accent-20;
+  background: $page-color;
+}
+
+.reservations__subtitle {
+  &::before {
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin:  0 auto;
+  }
+}
+
+.reservations__form {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.reservations__select {
+  margin: 64px 0;
+	width: 400px;
+}
+
+.reservations_button {
+  border: none;
+	display: block;
+  cursor: pointer;
+}
+
+// codepen
+
+.select {
+  position: relative;
+	width: 412px;
+	padding: 16px 16px;
+  margin: 0 auto;
+	&[data-state="active"] {
+    .select__title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-45deg);
+      }
+      &::after {
+        transform: translate(3px, -50%) rotate(45deg);
+      }
+    }
+    
+    .select__content {
+      opacity: 1;
+    }
+    
+    .select__label + .select__input + .select__label {
+      max-height: 40px;
+      border-top-width: 1px;
+    }
+  }
+
+	.select__data {
+		position: relative;
+		width: 412px;
+		padding: 16px 16px;
+		margin: 0 auto;
+		&[data-calender="active"] {
+			.select__data--title {
+				&::before {
+					transform: translate(-3px, -50%) rotate(-45deg);
+				}
+				&::after {
+					transform: translate(3px, -50%) rotate(45deg);
+				}
+			}
+			
+			.select__content {
+				opacity: 1;
+			}
+			
+			.select__label--data + .select__input + .select__label--data {
+				max-height: 40px;
+				border-top-width: 1px;
+			}
+		}
+	}
+
+}
+
+.select__title,
+.select__data--title {
+  display: flex;
+  align-items: center;
+	width: 412px;
+  height: 100%;
+	color: $description;
+	font-family: 'Cormorant Upright';
+	font-size: 16px;
+  border: solid 1px $description;
+	padding: 16px 16px;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: $description;
+    transform: translate(-3px, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    border-color: $description;
+    &::before,
+    &::after {
+      background-color: $accent;
+    }
+  }
+}
+
+.select__content {
+  position: absolute;
+  top: 65px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 0px);
+  background-color: $page-color;
+  border: 1px solid $description;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  z-index: 8;
+}
+
+.select__input {
+  display: none;
+
+  &:checked + label {
+    background-color: $page-color;
+		font-family: 'Cormorant Upright';
+		font-size: 16px;
+		font-weight: 600;
+		color: $accent;
+  }
+  &:disabled + label {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+.select__label,
+.select__label--data {
+  display: flex;
+  align-items: center;
+	font-size: 16px;
+	font-family: 'Cormorant Upright';
+	font-weight: 600;
+  height: 40px;
+  max-height: 0;
+  padding: 0 16px;
+	color: $description;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  overflow: hidden;
+  & + input + & {
+    border-top: 0 solid #C7CCD160;
+  }
+  &:hover {
+    background-color: $page-color !important;
+    color: $accent;
+  }
+}

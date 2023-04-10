@@ -1,0 +1,103 @@
+@import 'root.scss';
+
+
+.splide__slide {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+  align-items: center;
+  padding: 48px 0 162px 0;
+  & .slide__content {
+    max-width: 453px;
+  }
+}
+
+.subtitle {
+  display: block;
+  font-family: 'Cormorant Upright';
+  font-size: $text-l;
+  color: $title;
+  position: relative;
+  padding: 0 0 25px 0;
+  font-size: 23px;
+  font-weight: 700;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    width: 40px;
+    height: 9px;
+    background: url(../images/icons/lofel.svg) center no-repeat;
+  }
+}
+
+.slide__title {
+  font-family: 'Cormorant Upright';
+  font-weight: 700;
+  font-size: 90px;
+  color: $accent;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  padding: 0 0 32px 0;
+}
+
+.slide__description {
+  font-family: 'Open Sans';
+  color: $description;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  padding: 0 0 32px 0;
+}
+
+.slide__button {
+  font-family: 'Cormorant Upright';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  display: inline-block;
+  padding: 8px 0;
+  width: 157px;
+  text-align: center;
+  background: $accent;
+  color: $page-color;
+}
+
+.slide__img {
+  position: relative;
+  img {
+    position: relative;
+  }
+  &::before {
+   content: '';
+   position: absolute;
+   width: 435px;
+   height: 435px;
+   top: -22px;
+   right: -22px;
+   left: auto;
+   background: $accent; 
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    bottom: -22px;
+    right: auto;
+    left: -22px;
+    background: $accent;
+    z-index: -1;
+   }
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+  counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+  counter-increment: pagination-num;
+  content: counter( pagination-num );
+}
