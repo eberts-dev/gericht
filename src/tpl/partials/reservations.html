@@ -5,7 +5,7 @@
         <form class="reservations__form" action="">
           <div class="subtitle reservations__subtitle">Reservations</div>
           <h1 class="title">Book A Table</h1>
-          <form class="reservations__select">
+          <div class="reservations__select">
 
             <div class="reservations__person">
               <div class="select" data-state="">
@@ -32,7 +32,7 @@
             <div class="reservations__data">
               <div class="select__data" data-calender="">
                 <div class="select__data--title" data-default="data">12/05/2023</div>
-                <div class="select__content">
+                <div class="select__content--data">
                   <input id="d0" class="select__input" type="radio" name="data" checked />
                   <label for="d0" class="select__label--data">12/05/2023</label>
   
@@ -50,6 +50,31 @@
                 </div>
               </div>
             </div>
+
+            <div class="reservations__time">
+              <div class="select__time" data-time="">
+                <div class="select__time--title" data-default="time">11:00 AM</div>
+                <div class="select__content--time">
+                  <input id="t0" class="select__input" type="radio" name="time" checked />
+                  <label for="t0" class="select__label--time">12:00 AM</label>
+  
+                  <input id="t1" class="select__input" type="radio" name="time" />
+                  <label for="t1" class="select__label--time">14:00 PM</label>
+  
+                  <input id="t2" class="select__input" type="radio" name="time" />
+                  <label for="t2" class="select__label--time">16:00 PM</label>
+  
+                  <input id="t3" class="select__input" type="radio" name="time" />
+                  <label for="t3" class="select__label--time">18:00 PM</label>
+  
+                  <input id="t4" class="select__input" type="radio" name="time" />
+                  <label for="t4" class="select__label--time">20:00 PM</label>
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
 
           <button class="button reservations_button" type="submit">Book Now</button>
         </form>
