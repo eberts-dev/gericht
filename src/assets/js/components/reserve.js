@@ -34,7 +34,7 @@ selectData_title.addEventListener('click', () => {
 
 
 for (let i = 0; i < selectData_labels.length; i++) {
-  selectSingle_labels[i].addEventListener('click', (evt) => {
+  selectData_labels[i].addEventListener('click', (evt) => {
     selectData_title.textContent = evt.target.textContent;
     selectData.setAttribute('data-calender', '');
   });

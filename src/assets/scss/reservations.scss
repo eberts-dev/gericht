@@ -27,8 +27,10 @@
 }
 
 .reservations__select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 64px 0;
-	width: 400px;
 }
 
 .reservations_button {
@@ -63,33 +65,32 @@
       border-top-width: 1px;
     }
   }
+}
 
-	.select__data {
-		position: relative;
-		width: 412px;
-		padding: 16px 16px;
-		margin: 0 auto;
-		&[data-calender="active"] {
-			.select__data--title {
-				&::before {
-					transform: translate(-3px, -50%) rotate(-45deg);
-				}
-				&::after {
-					transform: translate(3px, -50%) rotate(45deg);
-				}
-			}
-			
-			.select__content {
-				opacity: 1;
-			}
-			
-			.select__label--data + .select__input + .select__label--data {
-				max-height: 40px;
-				border-top-width: 1px;
-			}
-		}
-	}
-
+.select__data {
+  position: relative;
+  width: 412px;
+  padding: 16px 16px;
+  margin: 0 auto;
+  &[data-calender="active"] {
+    .select__data--title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-45deg);
+      }
+      &::after {
+        transform: translate(3px, -50%) rotate(45deg);
+      }
+    }
+    
+    .select__content--data {
+      opacity: 1;
+    }
+    
+    .select__label--data + .select__input + .select__label--data {
+      max-height: 40px;
+      border-top-width: 1px;
+    }
+  }
 }
 
 .select__title,
@@ -120,7 +121,6 @@
   &::after {
     transform: translate(3px, -50%) rotate(-45deg);
   }
-
   &:hover {
     border-color: $description;
     &::before,
@@ -130,7 +130,8 @@
   }
 }
 
-.select__content {
+.select__content,
+.select__content--data {
   position: absolute;
   top: 65px;
   left: 16px;
