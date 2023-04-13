@@ -1,3 +1,4 @@
+// select person
 const selectSingle = document.querySelector('.select');
 const selectSingle_title = selectSingle.querySelector('.select__title');
 const selectSingle_labels = selectSingle.querySelectorAll('.select__label');
@@ -19,7 +20,7 @@ for (let i = 0; i < selectSingle_labels.length; i++) {
   });
 }
 
-
+// select data 
 const selectData = document.querySelector('.select__data');
 const selectData_title = selectData.querySelector('.select__data--title');
 const selectData_labels = selectData.querySelectorAll('.select__label--data');
@@ -39,3 +40,26 @@ for (let i = 0; i < selectData_labels.length; i++) {
     selectData.setAttribute('data-calender', '');
   });
 }
+
+// select time
+const selectTime = document.querySelector('.select__time');
+const selectTime_title = selectTime.querySelector('.select__time--title');
+const selectTime_labels = selectTime.querySelectorAll('.select__label--time');
+
+selectTime_title.addEventListener('click', () => {
+  if ('active' === selectSingle.getAttribute('data-time')) {
+    selectTime.setAttribute('data-time');
+  } else {
+    selectTime.setAttribute('data-time', 'active');
+  }
+});
+
+
+for (let i = 0; i < selectTime_labels.length; i++) {
+  selectTime_labels[i].addEventListener('click', (evt) => {
+    selectTime_title.textContent = evt.target.textContent;
+    selectTime.setAttribute('data-time', '');
+  });
+}
+
+

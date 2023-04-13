@@ -9,6 +9,18 @@
   margin:  157px auto;
   border: 1px solid $accent-20;
   background: $page-color;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -186px;
+    left: auto;
+    right: -125px;
+    width: 146px;
+    height: 146px;
+    background: url('../images/icons/seal.svg') top no-repeat;
+    background-size: cover;
+  }
 }
 
 .reservations__subtitle {
@@ -28,7 +40,7 @@
 
 .reservations__select {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 64px 0;
 }
@@ -43,8 +55,7 @@
 
 .select {
   position: relative;
-	width: 412px;
-	padding: 16px 16px;
+	padding: 0px 16px;
   margin: 0 auto;
 	&[data-state="active"] {
     .select__title {
@@ -69,8 +80,7 @@
 
 .select__data {
   position: relative;
-  width: 412px;
-  padding: 16px 16px;
+  padding: 0px 16px;
   margin: 0 auto;
   &[data-calender="active"] {
     .select__data--title {
@@ -93,11 +103,38 @@
   }
 }
 
+.select__time {
+  position: relative;
+  padding: 0px 16px;
+  margin: 0 auto;
+  &[data-time="active"] {
+    .select__time--title {
+      &::before {
+        transform: translate(-3px, -50%) rotate(-45deg);
+      }
+      &::after {
+        transform: translate(3px, -50%) rotate(45deg);
+      }
+    }
+    
+    .select__content--time {
+      opacity: 1;
+    }
+    
+    .select__label--time + .select__input + .select__label--time {
+      max-height: 40px;
+      border-top-width: 1px;
+    }
+  }
+}
+
+
 .select__title,
-.select__data--title {
+.select__data--title,
+.select__time--title {
   display: flex;
   align-items: center;
-	width: 412px;
+	width: 378px;
   height: 100%;
 	color: $description;
 	font-family: 'Cormorant Upright';
@@ -110,7 +147,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 35px;
     display: block;
     width: 10px;
     height: 2px;
@@ -131,13 +168,14 @@
 }
 
 .select__content,
-.select__content--data {
+.select__content--data,
+.select__content--time {
   position: absolute;
-  top: 65px;
+  top: 49px;
   left: 16px;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 0px);
+  width: calc(100% - 34px);
   background-color: $page-color;
   border: 1px solid $description;
   border-top: none;
@@ -165,12 +203,14 @@
 }
 
 .select__label,
-.select__label--data {
+.select__label--data,
+.select__label--time {
   display: flex;
   align-items: center;
 	font-size: 16px;
 	font-family: 'Cormorant Upright';
 	font-weight: 600;
+  width: 378px;
   height: 40px;
   max-height: 0;
   padding: 0 16px;
