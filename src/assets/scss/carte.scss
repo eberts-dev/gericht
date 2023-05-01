@@ -1,0 +1,38 @@
+@import 'root.scss';
+
+.carte {
+  background: url('../images/main/carte.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.carte__list {
+  padding-top: 261px;
+  padding-bottom: 261px;
+  position: relative;
+  &::before {
+    content: '';
+    background: url('../images/icons/seal.svg') top no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    top: 0;
+  }
+  & .carte__list-item {
+    margin-bottom: 64px;
+  }
+  & .carte__list-item:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.carte__list-link {
+  font-size: 64px;
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 600;
+  color: $title;
+  line-height: 130%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
