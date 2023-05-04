@@ -1,0 +1,88 @@
+@import 'root.scss';
+
+.special {
+  background: $page-color;
+}
+
+.special__title {
+  text-align: center;
+  padding: 152px 0 64px;
+}
+
+.special__subtitle {
+  &::before {
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin:  0 auto;
+  }
+}
+
+.special__side {
+  width: 412px;
+}
+
+.special__container {
+  display: flex;
+  justify-content: center;
+}
+
+.side__title {
+  padding: 0 0 48px;
+  color: $title;
+  font-family: 'Cormorant Upright';
+  font-size: 45px;
+  line-height: 130%;
+}
+
+.list-title__name {
+  font-family: 'Cormorant Upright';
+  color: $accent;
+  font-size: 23px;
+  line-height: 130%;
+  width: 192px;
+}
+
+.list-title__line {
+  display: flex;
+  width: 119px;
+  height: 1px;
+  background: $line;
+  position: relative;
+  top: 16px;
+}
+
+.side__prise {
+  display: flex;
+  color: $title;
+  font-family: 'Cormorant Upright';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+}
+
+.list__subtitle {
+  display: flex;
+  color: $description;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.special__img {
+  padding: 0 32px;
+}
+
+.list-title__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0 8px;
+}
+
+.side__list-title {
+  padding: 0 0 40px;
+}
