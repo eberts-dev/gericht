@@ -1,0 +1,94 @@
+@import 'root.scss';
+
+.chef {
+  background: url('../images/main/about.jpg') center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.chef__container  {
+  display: flex;
+  justify-content: center;
+  padding: 152px 0;
+}
+
+.chef__info {
+  max-width: 570px;
+}
+
+.chef__title {
+  padding: 0 0 76px;
+}
+
+.chef__description {
+  color: $description;
+  font-size: 16px;
+  line-height: 175%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  position: relative;
+  padding: 0 0 64px;
+  &::before {
+    content: '';
+    background: url('../images/icons/quotes.svg') bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 47px;
+    height: 40px;
+    top: -5px;
+  }
+  & .description__title {
+    padding: 10px 0 0 55px;
+    display: block;
+  }
+  & .description__text {
+    display: block;
+  }
+}
+
+.chef__signature {
+  padding: 0 0 64px;
+  & .signature__name {
+    color: $accent;
+    font-size: 32px;
+    font-family: 'Cormorant Upright';
+    display: block;
+    padding: 0 0 8px;
+  }
+  & .signature__job {
+    color: $description;
+    font-size: 16px;
+    display: block;
+    font-family: 'Open Sans';
+  }
+}
+
+.chef__img {
+  position: relative;
+  margin-right: 120px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    top: -22px;
+    right: -22px;
+    left: auto;
+    background: #DCCA87;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    bottom: -22px;
+    right: auto;
+    left: -22px;
+    background: #DCCA87;
+    z-index: -1;
+  }
+  & img {
+    position: relative;
+  }
+}
