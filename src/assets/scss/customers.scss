@@ -1,0 +1,49 @@
+@import 'root.scss';
+
+.customers {
+  background: $page-color;
+}
+
+.customers__title {
+  text-align: center;
+}
+
+.customers__subtitle {
+  &::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.customers__container {
+  padding: 152px 0;
+}
+
+.customer__card {
+  max-width: 634px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .customer__text {
+    color: $description;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+  }
+  & .customer__name {
+    font-family: 'Cormorant Upright';
+    font-weight: 400;
+    font-size: 32px;
+    color: $accent;
+  }
+  & .customer__job {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: $job;
+  }
+}
+
