@@ -1,6 +1,7 @@
 @import 'root.scss';
 
 .customers {
+<<<<<<< HEAD
   position: relative;
   padding-bottom: 152px;
   &::after {
@@ -14,24 +15,39 @@
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
   }
+=======
+  background: $page-color;
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
 }
 
 .customers__title {
   text-align: center;
+<<<<<<< HEAD
   padding: 152px 0 64px;
+=======
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
 }
 
 .customers__subtitle {
   &::before {
+<<<<<<< HEAD
     content: '';
     width: 100%;
     left: 0;
     right: 0;
     margin:  0 auto;
+=======
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
   }
 }
 
 .customers__container {
+<<<<<<< HEAD
   display:  flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -89,3 +105,33 @@
     padding: 4px 0 0 0;
   }
 }
+=======
+  padding: 152px 0;
+}
+
+.customer__card {
+  max-width: 634px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .customer__text {
+    color: $description;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+  }
+  & .customer__name {
+    font-family: 'Cormorant Upright';
+    font-weight: 400;
+    font-size: 32px;
+    color: $accent;
+  }
+  & .customer__job {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: $job;
+  }
+}
+
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
