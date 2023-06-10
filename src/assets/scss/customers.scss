@@ -1,0 +1,137 @@
+@import 'root.scss';
+
+.customers {
+<<<<<<< HEAD
+  position: relative;
+  padding-bottom: 152px;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: auto;
+    right: 300px;
+    width: 146px;
+    height: 146px;
+    background: url('../images/icons/seal.svg') top no-repeat;
+    background-size: cover;
+  }
+=======
+  background: $page-color;
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
+}
+
+.customers__title {
+  text-align: center;
+<<<<<<< HEAD
+  padding: 152px 0 64px;
+=======
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
+}
+
+.customers__subtitle {
+  &::before {
+<<<<<<< HEAD
+    content: '';
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin:  0 auto;
+=======
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
+  }
+}
+
+.customers__container {
+<<<<<<< HEAD
+  display:  flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 84px;
+}
+
+.customer:nth-child(2n) {
+  margin-left: 32px;
+}
+
+.customer__pic {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 40px;
+    background: url('../images/icons/quote.svg') no-repeat;
+    bottom: -20px;
+    left: auto;
+    right: -17px;
+  }
+}
+
+.customer__description {
+  padding: 0 0 0 32px;
+}
+
+.customer__text {
+  color: $description;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 175%;
+}
+
+.customer__info {
+  padding: 16px 0 0 0;
+  .info__name {
+    font-family: 'Cormorant Upright', serif;
+    color: $accent;
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .info__job {
+    font-family: 'Open Sans', sans-serif;
+    color: $accent-light;
+    font-size: 16px;
+    padding: 4px 0 0 0;
+  }
+}
+=======
+  padding: 152px 0;
+}
+
+.customer__card {
+  max-width: 634px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & .customer__text {
+    color: $description;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+  }
+  & .customer__name {
+    font-family: 'Cormorant Upright';
+    font-weight: 400;
+    font-size: 32px;
+    color: $accent;
+  }
+  & .customer__job {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    color: $job;
+  }
+}
+
+>>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
