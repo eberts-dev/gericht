@@ -1,2 +1,43 @@
 @import 'root.scss';
 
+
+.video {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: 6;
+    top: 137px;
+    left: 200px;
+    right: auto;
+    width: 146px;
+    height: 146px;
+    background: url('../images/icons/seal.svg') top no-repeat;
+    background-size: cover;
+  }
+}
+
+.video__mask {
+  background: $optional;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 78%;
+  & .video__play {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin:  300px auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.video__img {
+  position: relative;
+  z-index: 1;
+}
