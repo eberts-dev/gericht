@@ -1,7 +1,6 @@
 @import 'root.scss';
 
 .customers {
-<<<<<<< HEAD
   position: relative;
   padding-bottom: 152px;
   &::after {
@@ -15,9 +14,7 @@
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
   }
-=======
   background: $page-color;
->>>>>>> 74c9ed879e3dba31579eefa2cf284832b5d45005
 }
 
 .customers__title {
