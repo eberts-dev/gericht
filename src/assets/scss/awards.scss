@@ -1,0 +1,82 @@
+@import 'root.scss';
+
+.awards {
+  padding: 125px 0;
+  background: url(../images/main/about.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.awards__header {
+  font-family: 'Cormorant Upright', serif;
+  margin: 0 0 64px 0;
+  & .awards__name {
+    color: $title;
+    font-size: 23px;
+    padding: 0 0 25px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 33px;
+      width: 40px;
+      height: 9px;
+      background: url(../images/icons/lofel.svg) center no-repeat;
+    }
+  }
+  & .awards__title {
+    font-size: 64px;
+    color: $accent;
+    letter-spacing: 1.92px;
+    font-weight: 600;
+  }
+}
+
+.laurels__info {
+  width: 190px;
+  & .laurels__title {
+    color: $accent;
+    font-family: 'Cormorant Upright', serif;
+    font-size: 23px;
+    font-weight: 700;
+  }
+  & .laurest__description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: $description;
+    line-height: 175%;
+  }
+}
+
+.awards__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awards__info {
+  width: 633px;
+  padding-right: 111px;
+}
+
+.laurels__list--item {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.laurels__title {
+  padding: 0 0 8px 0;
+}
+
+.laurels__list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 64px;
+}
+
+
+
+
