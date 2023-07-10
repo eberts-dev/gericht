@@ -1,7 +1,19 @@
 @import 'root.scss';
 
 .blog {
-  padding-bottom: 164px;
+  padding-bottom: 262px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: auto;
+    bottom: 128px;
+    right: 190px;
+    width: 146px;
+    height: 146px;
+    background: url(../images/icons/seal.svg) top no-repeat;
+    background-size: cover;
+  }
 }
 
 .blog__title {
