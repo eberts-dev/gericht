@@ -1,7 +1,7 @@
 @import 'root.scss';
 
 .blog {
-  padding-bottom: 262px;
+  padding-bottom: 152px;
   position: relative;
   &::before {
     content: '';
@@ -11,7 +11,7 @@
     right: 190px;
     width: 146px;
     height: 146px;
-    background: url(../images/icons/seal.svg) top no-repeat;
+    background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
   }
 }
