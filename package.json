@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "assembly-site",
   "author": "eberts",
+  "homepage": "https://rumforweb.github.io/gericht",
   "devDependencies": {
     "@splidejs/splide": "^4.1.4",
     "browser-sync": "^2.28.1",
@@ -21,5 +22,8 @@
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.2",
     "sass": "^1.58.3"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
