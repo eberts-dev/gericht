@@ -7,7 +7,7 @@
 footer {
     background: url("../images/main/footer_bg.jpg") no-repeat;
     background-size: cover;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 
 .newsletter {
@@ -17,7 +17,7 @@ footer {
 .newsletter__block {
     border: 1px solid rgba(220, 202, 135, 0.2);
     position: relative;
-    top: -286px;
+    top: -182px;
     box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
     background: #0c0c0c;
 }
@@ -86,4 +86,104 @@ footer {
     cursor: pointer;
     border: none;
     font-size: 16px;
+}
+
+.footer__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.contact__title {
+    font-size: 32px;
+    font-family: "Cormorant Upright", serif;
+    color: #F5EFDB;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.contact__adress {
+    text-align: center;
+    color: #AAAAAA;
+    font-size: 16px;
+    font-family: "Open Sans";
+    padding-bottom: 8px;
+    line-height: 175%;
+}
+
+.project {
+    width: 438px;
+    text-align: center;
+    padding: 0 228px 0 126px;
+}
+
+.project__name {
+    font-size: 64px;
+    color: #DCCA87;
+    font-family: "Cormorant Upright", serif;
+    text-transform: uppercase;
+    padding-bottom: 32px;
+}
+
+.project__description {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    color: #ffffff;
+    padding-bottom: 41px;
+    position: relative;
+    line-height: 175%;
+}
+
+.project__description::before {
+    content: "";
+    background: url("../images/icons/lofel.svg") no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 9px;
+    position: absolute;
+    top: 65px;
+    right: auto;
+    left: 47%;
+    margin: 0 auto;
+}
+
+.poject__social a:nth-child(2) {
+    margin: 0 16px;
+}
+
+.working {
+    text-align: center;
+}
+
+.working__name {
+    font-family: "Cormorant Upright", serif;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 1.28px;
+    color: #F5EFDB;
+    padding-bottom: 24px;
+}
+
+.working__hourse {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    color: #AAAAAA;
+    padding-bottom: 8px;
+}
+
+.footer__copyright {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    color: #AAAAAA;
+    text-align: center;
+    padding-bottom: 144px;
 }
