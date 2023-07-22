@@ -1,0 +1,1398 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    padding: 48px 0 162px 0;
+}
+
+.splide__slide .slide__content {
+    max-width: 453px;
+}
+
+.subtitle {
+    display: block;
+    font-family: "Cormorant Upright";
+    font-size: 23px;
+    color: #ffffff;
+    position: relative;
+    padding: 0 0 25px 0;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.subtitle::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    width: 40px;
+    height: 9px;
+    background: url(../images/icons/lofel.svg) center no-repeat;
+}
+
+.slide__title {
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 90px;
+    color: #DCCA87;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    padding: 0 0 32px 0;
+}
+
+.slide__description {
+    font-family: "Open Sans";
+    color: #AAAAAA;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    padding: 0 0 32px 0;
+}
+
+.slide__button {
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    display: inline-block;
+    padding: 8px 0;
+    width: 157px;
+    text-align: center;
+    background: #DCCA87;
+    color: #0C0B08;
+}
+
+.slide__img {
+    position: relative;
+}
+
+.slide__img img {
+    position: relative;
+}
+
+.slide__img::before {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    top: -22px;
+    right: -22px;
+    left: auto;
+    background: #DCCA87;
+}
+
+.slide__img::after {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    bottom: -22px;
+    right: auto;
+    left: -22px;
+    background: #DCCA87;
+    z-index: -1;
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+    counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter(pagination-num);
+}
+
+.about {
+    background: url("../images/main/about.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.about__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 130px;
+}
+
+.left-side, .right-side {
+    max-width: 523px;
+    z-index: 99;
+}
+
+.left-side {
+    text-align: right;
+}
+
+.about__description {
+    text-align: right;
+}
+
+.about__btn, .button--history {
+    width: 141px;
+}
+
+.description--right {
+    text-align: left;
+}
+
+.about__knife {
+    padding: 0 96px 0 74px;
+    position: relative;
+    z-index: 98;
+}
+
+.about__knife::before {
+    content: "";
+    position: absolute;
+    width: 391px;
+    height: 415px;
+    background: url("../images/icons/G.svg") center no-repeat;
+    left: -77px;
+    top: 140px;
+    right: 0;
+}
+
+.about__knife img {
+    position: relative;
+    z-index: 98;
+}
+
+.about__title {
+    padding: 0 0 32px 0;
+    position: relative;
+}
+
+.about__title::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background: url("../images/icons/lofel.svg") center no-repeat;
+    transform: rotate(180deg);
+    right: 0;
+    left: auto;
+    top: 85px;
+}
+
+.about__title--right {
+    position: relative;
+}
+
+.about__title--right::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 6px;
+    background: url("../images/icons/lofel.svg") center no-repeat;
+    transform: rotate(0deg);
+    right: auto;
+    left: 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.reservations {
+    background: #0C0B08;
+}
+
+.reservations__container {
+    width: 1366px;
+    margin: 157px auto;
+    border: 1px solid rgba(220, 202, 135, 0.1254901961);
+    background: #0C0B08;
+    position: relative;
+}
+
+.reservations__container::after {
+    content: "";
+    position: absolute;
+    top: -186px;
+    left: auto;
+    right: -125px;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+.reservations__subtitle::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.reservations__form {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.reservations__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0;
+}
+
+.reservations_button {
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select[data-state=active] .select__title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select[data-state=active] .select__title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select[data-state=active] .select__content {
+    opacity: 1;
+}
+
+.select[data-state=active] .select__label + .select__input + .select__label {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+.select__data {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select__data[data-calender=active] .select__data--title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select__data[data-calender=active] .select__data--title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select__data[data-calender=active] .select__content--data {
+    opacity: 1;
+}
+
+.select__data[data-calender=active] .select__label--data + .select__input + .select__label--data {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+.select__time {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select__time[data-time=active] .select__time--title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select__time[data-time=active] .select__time--title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select__time[data-time=active] .select__content--time {
+    opacity: 1;
+}
+
+.select__time[data-time=active] .select__label--time + .select__input + .select__label--time {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+.select__title,
+.select__data--title,
+.select__time--title {
+    display: flex;
+    align-items: center;
+    width: 378px;
+    height: 100%;
+    color: #AAAAAA;
+    font-family: "Cormorant Upright";
+    font-size: 16px;
+    border: solid 1px #AAAAAA;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+
+.select__title::before, .select__title::after,
+.select__data--title::before,
+.select__data--title::after,
+.select__time--title::before,
+.select__time--title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #AAAAAA;
+    transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.select__title::after,
+.select__data--title::after,
+.select__time--title::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.select__title:hover,
+.select__data--title:hover,
+.select__time--title:hover {
+    border-color: #AAAAAA;
+}
+
+.select__title:hover::before, .select__title:hover::after,
+.select__data--title:hover::before,
+.select__data--title:hover::after,
+.select__time--title:hover::before,
+.select__time--title:hover::after {
+    background-color: #DCCA87;
+}
+
+.select__content,
+.select__content--data,
+.select__content--time {
+    position: absolute;
+    top: 49px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 34px);
+    background-color: #0C0B08;
+    border: 1px solid #AAAAAA;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    z-index: 8;
+}
+
+.select__input {
+    display: none;
+}
+
+.select__input:checked + label {
+    background-color: #0C0B08;
+    font-family: "Cormorant Upright";
+    font-size: 16px;
+    font-weight: 600;
+    color: #DCCA87;
+}
+
+.select__input:disabled + label {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.select__label,
+.select__label--data,
+.select__label--time {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Cormorant Upright";
+    font-weight: 600;
+    width: 378px;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    color: #AAAAAA;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.select__label + input + .select__label,
+.select__label + input + .select__label--data,
+.select__label + input + .select__label--time,
+.select__label--data + input + .select__label,
+.select__label--data + input + .select__label--data,
+.select__label--data + input + .select__label--time,
+.select__label--time + input + .select__label,
+.select__label--time + input + .select__label--data,
+.select__label--time + input + .select__label--time {
+    border-top: 0 solid rgba(199, 204, 209, 0.3764705882);
+}
+
+.select__label:hover,
+.select__label--data:hover,
+.select__label--time:hover {
+    background-color: #0C0B08 !important;
+    color: #DCCA87;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.carte {
+    background: url("../images/main/carte.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.carte__list {
+    padding-top: 261px;
+    padding-bottom: 261px;
+    position: relative;
+}
+
+.carte__list::before {
+    content: "";
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    top: 0;
+}
+
+.carte__list .carte__list-item {
+    margin-bottom: 64px;
+}
+
+.carte__list .carte__list-item:last-child {
+    margin-bottom: 0px;
+}
+
+.carte__list-link {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 130%;
+}
+
+.carte__list-link:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.special {
+    background: #0C0B08;
+    margin: 0 0 152px;
+}
+
+.special__title {
+    text-align: center;
+    padding: 152px 0 64px;
+}
+
+.special__subtitle::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.special__side {
+    width: 412px;
+}
+
+.special__container {
+    display: flex;
+    justify-content: center;
+}
+
+.side__title {
+    padding: 0 0 48px;
+    color: #ffffff;
+    font-family: "Cormorant Upright";
+    font-size: 45px;
+    line-height: 130%;
+}
+
+.list-title__name {
+    font-family: "Cormorant Upright";
+    color: #DCCA87;
+    font-size: 23px;
+    line-height: 130%;
+    width: 192px;
+}
+
+.list-title__line {
+    display: flex;
+    width: 119px;
+    height: 1px;
+    background: #FAFAFA;
+    position: relative;
+    top: 16px;
+}
+
+.side__prise {
+    display: flex;
+    color: #ffffff;
+    font-family: "Cormorant Upright";
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+.list__subtitle {
+    display: flex;
+    color: #AAAAAA;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.special__img {
+    padding: 0 32px;
+}
+
+.list-title__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 8px;
+}
+
+.side__list-title {
+    padding: 0 0 40px;
+}
+
+.special__btn {
+    display: flex;
+    justify-content: center;
+    margin: 65px 0 0;
+}
+
+.special__btn .special__more {
+    width: 136px;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.chef {
+    background: url("../images/main/about.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.chef__container {
+    display: flex;
+    justify-content: center;
+    padding: 152px 0;
+}
+
+.chef__info {
+    max-width: 570px;
+}
+
+.chef__title {
+    padding: 0 0 76px;
+}
+
+.chef__description {
+    color: #AAAAAA;
+    font-size: 16px;
+    line-height: 175%;
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    position: relative;
+    padding: 0 0 64px;
+}
+
+.chef__description::before {
+    content: "";
+    background: url("../images/icons/quotes.svg") bottom no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 47px;
+    height: 40px;
+    top: -5px;
+}
+
+.chef__description .description__title {
+    padding: 10px 0 0 55px;
+    display: block;
+}
+
+.chef__description .description__text {
+    display: block;
+}
+
+.chef__signature {
+    padding: 0 0 64px;
+}
+
+.chef__signature .signature__name {
+    color: #DCCA87;
+    font-size: 32px;
+    font-family: "Cormorant Upright";
+    display: block;
+    padding: 0 0 8px;
+}
+
+.chef__signature .signature__job {
+    color: #AAAAAA;
+    font-size: 16px;
+    display: block;
+    font-family: "Open Sans";
+}
+
+.chef__img {
+    position: relative;
+    margin-right: 120px;
+}
+
+.chef__img::before {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    top: -22px;
+    right: -22px;
+    left: auto;
+    background: #DCCA87;
+}
+
+.chef__img::after {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    bottom: -22px;
+    right: auto;
+    left: -22px;
+    background: #DCCA87;
+    z-index: -1;
+}
+
+.chef__img img {
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.customers {
+    position: relative;
+    padding-bottom: 152px;
+    background: #0C0B08;
+}
+
+.customers::after {
+    content: "";
+    position: absolute;
+    top: -45px;
+    left: auto;
+    right: 300px;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+.customers__title {
+    text-align: center;
+    padding: 152px 0 64px;
+}
+
+.customers__subtitle::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.customers__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
+
+.customer:nth-child(1),
+.customer:nth-child(2) {
+    margin-bottom: 84px;
+}
+
+.customer:nth-child(2n) {
+    margin-left: 32px;
+}
+
+.customer__pic {
+    position: relative;
+}
+
+.customer__pic::before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 40px;
+    background: url("../images/icons/quote.svg") no-repeat;
+    bottom: -20px;
+    left: auto;
+    right: -17px;
+}
+
+.customer__description {
+    padding: 0 0 0 32px;
+}
+
+.customer__text {
+    color: #AAAAAA;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    line-height: 175%;
+}
+
+.customer__info {
+    padding: 16px 0 0 0;
+}
+
+.customer__info .info__name {
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    font-size: 32px;
+    line-height: 130%;
+}
+
+.customer__info .info__job {
+    font-family: "Open Sans", sans-serif;
+    color: #F5EFDB;
+    font-size: 16px;
+    padding: 4px 0 0 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.video {
+    position: relative;
+}
+
+.video::after {
+    content: "";
+    position: absolute;
+    z-index: 6;
+    top: 137px;
+    left: 200px;
+    right: auto;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+.video__mask {
+    background: rgba(12, 12, 12, 0.4117647059);
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+}
+
+.video__mask .video__play {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 300px auto;
+}
+
+.video__mask .video__play:hover {
+    cursor: pointer;
+}
+
+.video__img {
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.awards {
+    padding: 125px 0;
+    background: url(../images/main/about.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.awards__header {
+    font-family: "Cormorant Upright", serif;
+    margin: 0 0 64px 0;
+}
+
+.awards__header .awards__name {
+    color: #ffffff;
+    font-size: 23px;
+    padding: 0 0 25px 0;
+    position: relative;
+}
+
+.awards__header .awards__name::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    width: 40px;
+    height: 9px;
+    background: url(../images/icons/lofel.svg) center no-repeat;
+}
+
+.awards__header .awards__title {
+    font-size: 64px;
+    color: #DCCA87;
+    letter-spacing: 1.92px;
+    font-weight: 600;
+}
+
+.laurels__info {
+    width: 190px;
+}
+
+.laurels__info .laurels__title {
+    color: #DCCA87;
+    font-family: "Cormorant Upright", serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.laurels__info .laurest__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #AAAAAA;
+    line-height: 175%;
+}
+
+.awards__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.awards__info {
+    width: 633px;
+    padding-right: 111px;
+}
+
+.laurels__list--item {
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.laurels__title {
+    padding: 0 0 8px 0;
+}
+
+.laurels__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.blog {
+    padding-bottom: 152px;
+    position: relative;
+}
+
+.blog::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    bottom: 128px;
+    right: 190px;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+.blog__title {
+    text-align: center;
+    padding: 152px 0 64px;
+}
+
+.blog__subtitle::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.blog__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #FAFAFA;
+    padding: 24px 0 32px;
+}
+
+.blog__header {
+    color: #DCCA87;
+    font-size: 32px;
+    font-family: "Cormorant Upright", serif;
+    line-height: 130%;
+    padding: 0 0 32px;
+}
+
+.blog__text {
+    font-family: "Open Sans", sans-serif;
+    color: #AAAAAA;
+    font-size: 16px;
+    line-height: 175%;
+    padding: 0 0 32px;
+}
+
+.blog__more {
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.blog__tips,
+.blog__cocktails,
+.blog__cooking {
+    width: 412px;
+}
+
+.blog__items {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+}
+
+.blog__more-btn {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.gallery {
+    background: url("../images/main/photo-bg.png") top no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.gallery__overlay {
+    background: rgba(4, 4, 4, 0.5);
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 128px 0;
+}
+
+.gallery__wrapper {
+    margin: 0;
+    width: 1300px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.gallety__content {
+    width: 455px;
+    margin-right: 64px;
+}
+
+.gallery__subtitle {
+    position: relative;
+}
+
+.gallery__subtitle::before {
+    content: "";
+    left: 0;
+    right: auto;
+    top: 35px;
+}
+
+.gallery__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    color: #AAAAAA;
+    padding: 24px 0;
+}
+
+.gallety__pictures {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 680px;
+}
+
+.gallety__pictures a {
+    display: inline-block;
+    margin-right: 32px;
+    position: relative;
+}
+
+.gallety__pictures a:hover {
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.gallety__pictures a:hover::before {
+    content: "";
+    background: url(../images/icons/instagram.svg) center no-repeat;
+    width: 52px;
+    height: 52px;
+    top: 200px;
+    left: 126px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.gallety__pictures a > img:last-child {
+    margin-right: 0;
+}
+
+.gallety__pictures a > img:hover {
+    opacity: 0.4;
+    transition: 0.2s;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+footer {
+    background: url("../images/main/footer_bg.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 400px;
+}
+
+.newsletter {
+    margin-top: 113px;
+}
+
+.newsletter__block {
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    position: relative;
+    top: -286px;
+    box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+    background: #0c0c0c;
+}
+
+.newsletter__block::before {
+    content: "";
+    position: absolute;
+    top: -177px;
+    left: -223px;
+    right: auto;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+.newsletter__title {
+    padding-top: 64px;
+    text-align: center;
+}
+
+.newsletter__subtitle::before {
+    content: "";
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.newsletter__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 64px;
+}
+
+.newsletter__description {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 64px;
+}
+
+.newsletter__mail {
+    border: 1px solid #F5EFDB;
+    background: rgba(12, 12, 12, 0.4117647059);
+    padding: 16px 18px;
+    width: 796px;
+    margin-right: 32px;
+    color: #AAAAAA;
+}
+
+.newsletter__mail::-moz-placeholder {
+    font-family: "Cormorant Upright", serif;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.newsletter__mail::placeholder {
+    font-family: "Cormorant Upright", serif;
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.newsletter__btn {
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "Cormorant Upright", serif;
+    font-family: "Open Sans", sans-serif;
+    background: #0C0B08;
+}
+
+h1 {
+    font-size: 70px;
+    color: #DCCA87;
+    font-family: "Cormorant Upright", serif;
+}
+
+.title {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+.description {
+    font-family: "Open Sans";
+    color: #AAAAAA;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    padding: 0 0 32px 0;
+}
+
+.button {
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    display: inline-block;
+    padding: 8px 0;
+    width: 157px;
+    text-align: center;
+    background: #DCCA87;
+    color: #0C0B08;
+}
+
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.menu__list {
+    display: flex;
+    max-width: 409px;
+}
+
+.menu__logo a {
+    color: #ffffff;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700px;
+}
+
+.menu__list .menu__item {
+    font-family: "Open Sans", sans-serif;
+    padding: 0 32px 0 0;
+}
+
+.menu__list .menu__item:last-child {
+    padding-right: 0;
+}
+
+.menu__link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.menu__register {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 364px;
+}
+
+.menu__register .menu__login {
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    display: block;
+}
+
+.menu__register .menu__login::before {
+    content: "";
+    width: 2px;
+    height: 52px;
+    background: url(../images/icons/menu-line.svg) center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    right: -71px;
+    left: auto;
+}
+
+.menu__register .menu__book {
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+}

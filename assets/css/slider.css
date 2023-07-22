@@ -1,0 +1,111 @@
+.wrapper {
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    align-items: center;
+    padding: 48px 0 162px 0;
+}
+
+.splide__slide .slide__content {
+    max-width: 453px;
+}
+
+.subtitle {
+    display: block;
+    font-family: "Cormorant Upright";
+    font-size: 23px;
+    color: #ffffff;
+    position: relative;
+    padding: 0 0 25px 0;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.subtitle::before {
+    content: "";
+    position: absolute;
+    top: 33px;
+    width: 40px;
+    height: 9px;
+    background: url(../images/icons/lofel.svg) center no-repeat;
+}
+
+.slide__title {
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 90px;
+    color: #DCCA87;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    padding: 0 0 32px 0;
+}
+
+.slide__description {
+    font-family: "Open Sans";
+    color: #AAAAAA;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    padding: 0 0 32px 0;
+}
+
+.slide__button {
+    font-family: "Cormorant Upright";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    display: inline-block;
+    padding: 8px 0;
+    width: 157px;
+    text-align: center;
+    background: #DCCA87;
+    color: #0C0B08;
+}
+
+.slide__img {
+    position: relative;
+}
+
+.slide__img img {
+    position: relative;
+}
+
+.slide__img::before {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    top: -22px;
+    right: -22px;
+    left: auto;
+    background: #DCCA87;
+}
+
+.slide__img::after {
+    content: "";
+    position: absolute;
+    width: 435px;
+    height: 435px;
+    bottom: -22px;
+    right: auto;
+    left: -22px;
+    background: #DCCA87;
+    z-index: -1;
+}
+
+/* Add numbers to pagination buttons by CSS */
+.splide__pagination {
+    counter-reset: pagination-num;
+}
+
+.splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter(pagination-num);
+}
