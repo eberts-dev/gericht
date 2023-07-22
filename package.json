@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "assembly-site",
   "author": "eberts",
+  "homepage": "https://rumforweb.github.io/gericht",
+  "scripts": {
+    "deploy": ""
+  },
   "devDependencies": {
     "@splidejs/splide": "^4.1.4",
     "browser-sync": "^2.28.1",

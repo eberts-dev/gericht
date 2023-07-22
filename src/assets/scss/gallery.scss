@@ -1,5 +1,22 @@
 @import 'root.scss';
 
+.gallery {
+  background: url('../images/main/photo-bg.png') top no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.gallery__overlay {
+  background: $black-overlay;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 128px 0;
+}
+
 .gallery__wrapper {
   margin: 0;
   width: 1300px;
@@ -33,12 +50,12 @@
   padding: 24px 0;
 }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+// .gallery {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+// }
 
 .gallety__pictures {
   display: flex;
