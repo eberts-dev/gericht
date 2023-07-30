@@ -1,7 +1,7 @@
 @import 'root.scss';
 
 
-.splide__slide {
+.slide__box {
   display: flex;
   justify-content: center;
   gap: 160px;
@@ -97,7 +97,75 @@
   counter-reset: pagination-num;
 }
 
-.splide__pagination__page:before {
-  counter-increment: pagination-num;
-  content: counter( pagination-num );
+.splide__pagination__page {
+  background: none;
 }
+
+.splide__pagination__page:before {
+  font-family: 'Cormorant Upright';
+  content: '';
+  font-size: 26px;
+  background: none;
+  border-radius: 0;
+}
+
+.splide__pagination__page.is-active {
+  background: none;
+}
+
+.dinner-pagination {
+  font-family: 'Cormorant Upright';
+  display: flex;
+  align-items: center;
+}
+
+.dinner-page {
+  opacity: 1;
+  width: 10px;
+  height: 28px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 8px;
+  background: none;
+  color: $job;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-family: 'Cormorant Upright';
+}
+
+.dinner-page.is-active {
+  color: $title;
+  font-family: 'Cormorant Upright';
+  font-size: 26px;
+  background: none;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 28px;
+  text-align: center;
+  margin: 0 8px;
+  padding: 0 8px;
+  transform: scale(1.4);
+  position: relative;
+
+}
+
+.dinner-page.is-active::after  {
+  content: '';
+  color: $accent;
+  position: absolute;
+  background: $accent;
+  height: 2px;
+  width: 16px;
+  top: 15px;
+  left: 28px; 
+  :last-of-type {
+    visibility: hidden;
+  }
+}
+
+
+
+
+
