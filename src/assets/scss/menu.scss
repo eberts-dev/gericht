@@ -67,3 +67,37 @@
     display: block;
   }
 }
+
+.scroll-totop {
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+  bottom: 367px;
+  left: auto;
+  right: 126px;
+}
+
+#toTop {
+  font-family: 'Cormorant Upright', serif;
+  cursor: pointer;
+  color: $accent;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  &::before {
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    background: url('../images/icons/top.svg') no-repeat;
+    width: 3px;
+    height: 61px;
+    bottom: 40px;
+    left: 17px;
+  }
+}
