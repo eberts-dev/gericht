@@ -1,5 +1,7 @@
 // root colors
 
+@import 'smart-grid.scss';
+
 $page-color: #0C0B08;
 $title: #ffffff;
 $accent: #DCCA87;
@@ -30,7 +32,8 @@ $text-l: 23px;
 // global styles
 
 .wrapper {
-  max-width: $md;
-  padding: 0 20px;
-  margin: 0 auto;
+  @include wrapper();
+  // max-width: $md;
+  // padding: 0 20px;
+  // margin: 0 auto;
 }

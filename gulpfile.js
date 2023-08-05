@@ -7,6 +7,7 @@ const cssbeautify = require("gulp-cssbeautify");
 const removeComents = require("gulp-strip-css-comments");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass")(require('sass'));
+const smartgrid = require("smart-grid");
 const cssnano = require("gulp-cssnano");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
@@ -66,6 +67,46 @@ function html() {
     .pipe(dest(path.build.html))
     .pipe(browserSync.reload({stream: true}));
 }
+
+var settings = {
+  outputStyle: 'scss', /* less || scss || sass || styl */
+  columns: 12, /* number of grid columns */
+  offset: '30px', /* gutter width px || % || rem */
+  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+  container: {
+      maxWidth: '1600px', /* max-width оn very large screen */
+      fields: '30px' /* side fields */
+  },
+  breakPoints: {
+      lg: {
+          width: '1300px', /* -> @media (max-width: 1100px) */
+      },
+      md: {
+          width: '960px'
+      },
+      sm: {
+          width: '780px',
+          fields: '15px' /* set fields only if you want to change container.fields */
+      },
+      xs: {
+          width: '560px'
+      }
+      /* 
+      We can create any quantity of break points.
+
+      some_name: {
+          width: 'Npx',
+          fields: 'N(px|%|rem)',
+          offset: 'N(px|%|rem)'
+      }
+      */
+  }
+};
+
+gulp.task('grid', function(done){
+  smartgrid('src/assets/scss', settings);
+  done();
+});
 
 function css() {
   return src(path.src.css, {base: srcPath + "assets/scss/"})
@@ -157,7 +198,7 @@ const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 exports.html = html 
-exports.css = css 
+exports.css = css
 exports.js = js 
 exports.images = images 
 exports.fonts = fonts 
