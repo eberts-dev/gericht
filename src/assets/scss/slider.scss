@@ -9,6 +9,9 @@
   padding: 48px 0 162px 0;
   & .slide__content {
     max-width: 453px;
+    @media (max-width:1400px) {
+      max-width: 359px;
+    }
   }
 }
 
@@ -39,6 +42,9 @@
   line-height: 130%;
   letter-spacing: 0.04em;
   padding: 0 0 32px 0;
+  @media (max-width:1400px) {
+    font-size: 60px;
+  }
 }
 
 .slide__description {
@@ -49,6 +55,9 @@
   font-size: 16px;
   line-height: 175%;
   padding: 0 0 32px 0;
+  @media (max-width:1400px) {
+    font-size: 13px;
+  }
 }
 
 .slide__button {
@@ -68,6 +77,10 @@
   position: relative;
   img {
     position: relative;
+    @media (max-width:$md) {
+      width: 416px;
+      height: 488px;
+    }
   }
   &::before {
    content: '';
@@ -78,6 +91,10 @@
    right: -22px;
    left: auto;
    background: $accent; 
+   @media (max-width:$md) {
+    width: 335px;
+    height: 335px;
+   }
   }
   &::after {
     content: '';
@@ -89,6 +106,10 @@
     left: -22px;
     background: $accent;
     z-index: -1;
+    @media (max-width:$md) {
+      width: 335px;
+      height: 335px;
+     }
    }
 }
 

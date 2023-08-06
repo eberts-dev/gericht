@@ -79,10 +79,10 @@ var settings = {
   },
   breakPoints: {
       lg: {
-          width: '1300px', /* -> @media (max-width: 1100px) */
+          width: '1650px', /* -> @media (max-width: 1100px) */
       },
       md: {
-          width: '960px'
+          width: '1170px'
       },
       sm: {
           width: '780px',

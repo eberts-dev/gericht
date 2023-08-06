@@ -44,6 +44,9 @@ h1 {
   font-size: 16px;
   line-height: 175%;
   padding: 0 0 32px 0;
+  @media (max-width:1400px) {
+      font-size: 13px;
+  }
 }
 
 .button {

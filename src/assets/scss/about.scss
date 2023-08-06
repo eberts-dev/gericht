@@ -23,6 +23,9 @@
 
 .about__description {
   text-align: right;
+  @media (max-width: $md) {
+    width: 300px;
+  }
 }
 
 .about__btn, .button--history {
@@ -31,6 +34,9 @@
 
 .description--right {
   text-align: left;
+  @media (max-width: $md) {
+    width: 300px;
+  }
 }
 
 .about__knife {

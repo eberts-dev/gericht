@@ -20,6 +20,12 @@
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @media (max-width:1650px){
+        right: 35px;
+    }
+    @media (max-width:1400px) {
+      bottom: 100px;
+    }
   }
 }
 

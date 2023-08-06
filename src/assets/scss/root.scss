@@ -36,4 +36,7 @@ $text-l: 23px;
   // max-width: $md;
   // padding: 0 20px;
   // margin: 0 auto;
+  @media (max-width:$md) {
+    @include sm-block();
+  }
 }
