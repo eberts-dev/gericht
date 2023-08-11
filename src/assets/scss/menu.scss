@@ -44,6 +44,9 @@
   align-items: center;
   justify-content: space-between;
   width: 364px;
+  @media (max-width:$md) {
+    width: 255px;
+  }
   & .menu__login {
     color: $title;
     font-size: $text-m;
@@ -59,6 +62,9 @@
       top: -20px;
       right: -71px;
       left: auto;
+      @media (max-width:$md) {
+        right: -15px;
+      }
     }
   }
   & .menu__book {
@@ -75,6 +81,12 @@
   bottom: 367px;
   left: auto;
   right: 126px;
+  @media (max-width:1650px) {
+    right: 55px;
+  }
+  @media (max-width:1400px) {
+    bottom: 100px;
+  }
 }
 
 #toTop {
