@@ -7,10 +7,16 @@
   gap: 160px;
   align-items: center;
   padding: 48px 0 162px 0;
+  @include pad-md {
+    gap: 70px;
+  }
   & .slide__content {
     max-width: 453px;
-    @media (max-width:1400px) {
-      max-width: 359px;
+    @include desctop-xs {
+      max-width: $xs;
+    }
+    @include pad-md {
+     max-width: $s;
     }
   }
 }
@@ -77,7 +83,7 @@
   position: relative;
   img {
     position: relative;
-    @media (max-width:$md) {
+    @include desctop-xs {
       width: 416px;
       height: 488px;
     }

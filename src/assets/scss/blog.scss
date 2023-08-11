@@ -13,6 +13,9 @@
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @include desctop-xs {
+      bottom: 0;
+    }
   }
 }
 
@@ -47,6 +50,9 @@
   font-family: 'Cormorant Upright', serif;
   line-height: 130%;
   padding: 0 0 32px;
+  @include desctop-xs {
+    font-size: 27px;
+  }
 }
 
 .blog__text {
@@ -68,6 +74,13 @@
 .blog__cocktails,
 .blog__cooking {
   width: 412px;
+  @include desctop-xs {
+    width: 312px;
+    img {
+      width: 312px;
+      height: 338px;
+    }
+  }
 }
   
 .blog__items {

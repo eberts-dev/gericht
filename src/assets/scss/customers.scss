@@ -47,11 +47,26 @@
 .customer:nth-child(1),
 .customer:nth-child(2) {
   margin-bottom: 84px;
+  @include desctop-xs {
+    margin-left: 0;
+   }
+}
+
+@include desctop-xs {
+  .customer:nth-child(3),
+  .customer:nth-child(4),{
+    margin-bottom: 84px;
+ }
 }
 
 .customer:nth-child(2n) {
   margin-left: 32px;
+  @include desctop-xs {
+   margin-left: 0;
+  }
 }
+
+
 
 .customer__pic {
   position: relative;

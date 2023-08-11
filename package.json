@@ -25,7 +25,6 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "panini": "^1.7.2",
-    "sass": "^1.58.3",
-    "smart-grid": "^2.1.2"
+    "sass": "^1.58.3"
   }
 }
