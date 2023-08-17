@@ -44,6 +44,9 @@
   }
   & .description__text {
     display: block;
+    @include desctop-md {
+      padding-left: 54px;
+    }
   }
 }
 
@@ -87,6 +90,11 @@
     left: -22px;
     background: #DCCA87;
     z-index: -1;
+    @include desctop-md {
+      bottom: 88px;
+      width: 330px;
+      height: 330px;
+    }
   }
   & img {
     position: relative;

@@ -20,6 +20,15 @@
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @include desctop-md {
+      right: 50px;
+    }
+  }
+  @include desctop-md {
+    width: $sm;
+  }
+  @include pad-md {
+    width: 720px;
   }
 }
 
@@ -43,6 +52,10 @@
   justify-content: center;
   align-items: center;
   margin: 64px 0;
+  @include desctop-md {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 .reservations_button {

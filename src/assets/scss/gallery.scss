@@ -23,6 +23,9 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  @include desctop-xs {
+    padding-left: 300px;
+  }
 }
 
 .gallety__content {

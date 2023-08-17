@@ -17,20 +17,54 @@ $box-shadow: rgba(0, 0, 0, 0.70);
 
 // global grid
 
-$lg: 1680px;
+$lg: 1520px;
 $md: 1300px;
 $sm: 960px;
+$sm-small: 720px;
 $xs: 480px;
+$s: 360px;
 
 // global font-size
 
 $text-m: 16px;
 $text-l: 23px;
 
-// global styles
+// global breckpoints
+
+@mixin phone-xs {
+  @media (max-width: 320px) { @content; }
+}
+@mixin phone-md {
+  @media (max-width: 425px) { @content; }
+}
+
+@mixin pad-xs {
+  @media (max-width: 768px) { @content; }
+}
+@mixin pad-md {
+  @media (max-width: 1170px) { @content; }
+}
+
+@mixin desctop-xs {
+  @media (max-width: 1366px) { @content; }
+}
+@mixin desctop-md {
+  @media (max-width: 1680px) { @content; }
+}
+
+// global mixins
 
 .wrapper {
-  max-width: $md;
+  max-width: $lg;
   padding: 0 20px;
   margin: 0 auto;
+  @include desctop-md {
+    max-width: $md;
+  }
+  @include desctop-xs {
+    max-width: $sm;
+  }
+  @include pad-md {
+    max-width: $sm-small;
+  }
 }

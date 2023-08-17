@@ -157,7 +157,7 @@ const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 exports.html = html 
-exports.css = css 
+exports.css = css
 exports.js = js 
 exports.images = images 
 exports.fonts = fonts 

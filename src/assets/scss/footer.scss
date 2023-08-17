@@ -26,6 +26,9 @@ footer {
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @include desctop-xs {
+      left: 0;
+    }
   }
 }
 
@@ -65,6 +68,9 @@ footer {
   width: 796px;
   margin-right: 32px;
   color: $description;
+  @include desctop-xs {
+    width: 450px;
+  }
   &::placeholder {
     font-family: 'Cormorant Upright', serif;
     font-size: 16px;
@@ -106,6 +112,9 @@ footer {
   width: 438px;
   text-align: center;
   padding: 0 228px 0 126px;
+  @include desctop-xs {
+    padding: 0px 134px 0 66px;
+  }
 }
 
 .project__name {
