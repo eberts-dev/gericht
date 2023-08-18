@@ -3,6 +3,9 @@
 .carte {
   background: url('../images/main/carte.jpg') center no-repeat;
   background-size: cover;
+  @include pad-md {
+    background-size: contain;
+  }
 }
 
 .carte__list {

@@ -8,6 +8,9 @@
 .special__title {
   text-align: center;
   padding: 152px 0 64px;
+  @include pad-md {
+    padding: 0;
+  }
 }
 
 .special__subtitle {

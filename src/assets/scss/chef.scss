@@ -11,6 +11,12 @@
   display: flex;
   justify-content: center;
   padding: 152px 0;
+  @include  pad-md {
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 100px 0;
+  }
+
 }
 
 .chef__info {
@@ -70,6 +76,9 @@
 .chef__img {
   position: relative;
   margin-right: 120px;
+  @include pad-md {
+    margin-right: 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -79,6 +88,10 @@
     right: -22px;
     left: auto;
     background: #DCCA87;
+    @include pad-md {
+      width: 235px;
+      height: 235px;
+    }
   }
   &::after {
     content: "";
@@ -93,10 +106,19 @@
     @include desctop-md {
       bottom: 88px;
       width: 330px;
-      height: 330px;
+      height: auto;
+    }
+    @include pad-md {
+      width: 235px;
+      height: 235px;
+      bottom: -20px;
     }
   }
-  & img {
+  img {
     position: relative;
+    @include pad-md {
+      width: 378px;
+      height: auto;
+    }
   }
 }
