@@ -1,15 +1,34 @@
 @import 'root.scss';
 
 
+.component-slider {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background: url("../images/icons/scroll.svg") no-repeat;
+    background-size: cover;
+    width: 61px;
+    height: 113px;
+    bottom: 30px;
+    right: 140px;
+    left: auto;
+  }
+}
+
 .slide__box {
   display: flex;
   justify-content: center;
   gap: 160px;
   align-items: center;
+<<<<<<< HEAD
+  padding: 48px 0 100px 0;
+=======
   padding: 48px 0 162px 0;
   @include pad-md {
     gap: 70px;
   }
+>>>>>>> d4603be233604210eac6ec3f06f73c08bc92098e
   & .slide__content {
     max-width: 453px;
     @include desctop-xs {
@@ -191,8 +210,4 @@
     visibility: hidden;
   }
 }
-
-
-
-
 
