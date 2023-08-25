@@ -6,6 +6,9 @@
   background-size: cover;
   position: relative;
   z-index: -1;
+  @include phone-xs {
+    padding: 70px 0;
+  }
 }
 
 .awards__header {
@@ -53,11 +56,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include pad-md {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
 
 .awards__info {
   width: 633px;
   padding-right: 111px;
+  @include pad-md {
+    padding: 0;
+  }
 }
 
 .laurels__list--item {
@@ -78,8 +88,11 @@
 }
 
 .awards-img {
-  @include pad-md {
+  @include pad-lg {
     width: 455px;
     height: auto;
+  }
+  @include pad-md {
+    display: none;
   }
 }

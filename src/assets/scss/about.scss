@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
   padding: 120px 0 130px;
+  @include phone-md {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .left-side, .right-side {
@@ -50,6 +54,9 @@
   & img {
     position: relative;
     z-index: 98;
+  }
+  @include phone-md {
+    display: none;
   }
 }
 

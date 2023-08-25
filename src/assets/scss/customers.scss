@@ -3,6 +3,7 @@
 .customers {
   position: relative;
   padding-bottom: 152px;
+  background: $page-color;
   &::after {
     content: '';
     position: absolute;
@@ -13,8 +14,23 @@
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @include pad-xs {
+      right: 30px;
+    }
+    @include phone-md {
+      width: 100px;
+      height: 100px;
+    }
+    @include phone-xs {
+      right: 70px;
+    }
   }
-  background: $page-color;
+  @include pad-xs {
+    padding-bottom: 80px;
+  }
+  @include phone-md {
+    padding: 0;
+  }
 }
 
 .customers__title {
@@ -42,6 +58,12 @@
   display: flex;
   align-items: center;
   max-width: 600px;
+  @include phone-md {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 .customer:nth-child(1),
@@ -84,6 +106,9 @@
 
 .customer__description {
   padding: 0 0 0 32px;
+  @include phone-md {
+    padding: 0;
+  }
 }
 
 .customer__text {
@@ -91,6 +116,9 @@
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
   line-height: 175%;
+  @include phone-md {
+    padding-top: 50px;
+  }
 }
 
 .customer__info {
