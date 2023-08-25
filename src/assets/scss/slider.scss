@@ -31,6 +31,22 @@
   align-items: center;
   padding: 48px 0 100px 0;
   padding: 48px 0 162px 0;
+  & .slide__content {
+    width: 453px;
+    @include desctop-xs {
+      max-width: $xs;
+    }
+    @include pad-lg {
+     max-width: $s;
+    }
+    @include pad-md {
+      width: 300px;
+    }
+    @include pad-xs {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
   @include pad-lg {
     gap: 70px;
   }
@@ -47,22 +63,6 @@
   }
   @include phone-xs {
     width: 290px;
-  }
-  & .slide__content {
-    width: 453px;
-    @include desctop-xs {
-      max-width: $xs;
-    }
-    @include pad-lg {
-     max-width: $s;
-    }
-    @include pad-md {
-      width: 300px;
-    }
-    @include pad-xs {
-      width: 100%;
-      max-width: 100%;
-    }
   }
 }
 
