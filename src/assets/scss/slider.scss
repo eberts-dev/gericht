@@ -9,11 +9,27 @@
 }
 
 
+.component-slider {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background: url("../images/icons/scroll.svg") no-repeat;
+    background-size: cover;
+    width: 61px;
+    height: 113px;
+    bottom: 30px;
+    right: 140px;
+    left: auto;
+  }
+}
+
 .slide__box {
   display: flex;
   justify-content: center;
   gap: 160px;
   align-items: center;
+  padding: 48px 0 100px 0;
   padding: 48px 0 162px 0;
   @include pad-lg {
     gap: 70px;
@@ -234,8 +250,4 @@
     visibility: hidden;
   }
 }
-
-
-
-
 
