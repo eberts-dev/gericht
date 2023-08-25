@@ -14,6 +14,12 @@
     height: 146px;
     background: url('../images/icons/seal.svg') top no-repeat;
     background-size: cover;
+    @include pad-xs {
+      display: none;
+    }
+  }
+  @include phone-md {
+    display: none;
   }
 }
 
@@ -34,10 +40,23 @@
     &:hover {
       cursor: pointer;
     }
+    @include pad-xs {
+      top: 80px;
+      margin: 0 auto;
+    }
+  }
+  @include pad-xs {
+    height: 100%;
   }
 }
 
 .video__img {
   position: relative;
   z-index: 1;
+  & img {
+    @include pad-xs {
+      width: 100%;
+      height: auto;
+    }
+  }
 }

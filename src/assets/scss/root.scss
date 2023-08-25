@@ -21,7 +21,7 @@ $lg: 1520px;
 $md: 1300px;
 $sm: 920px;
 $sm-small: 720px;
-$xs: 480px;
+$xs: 526px;
 $s: 360px;
 
 // global font-size
@@ -33,16 +33,19 @@ $text-b: 50px;
 // global breckpoints
 
 @mixin phone-xs {
-  @media (max-width: 320px) { @content; }
+  @media (max-width: 420px) { @content; }
 }
 @mixin phone-md {
-  @media (max-width: 425px) { @content; }
+  @media (max-width: 480px) { @content; }
 }
 
 @mixin pad-xs {
-  @media (max-width: 768px) { @content; }
+  @media (max-width: 780px) { @content; }
 }
 @mixin pad-md {
+  @media (max-width: 980px) { @content; }
+}
+@mixin pad-lg {
   @media (max-width: 1170px) { @content; }
 }
 
@@ -65,7 +68,16 @@ $text-b: 50px;
   @include desctop-xs {
     max-width: $sm;
   }
-  @include pad-md {
+  @include pad-lg {
     max-width: $sm-small;
+  }
+  @include pad-md {
+    max-width: $xs;
+  }
+  @include phone-md {
+    width: $s;
+  }
+  @include phone-xs {
+    width: 290px;
   }
 }

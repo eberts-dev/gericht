@@ -23,13 +23,24 @@
     @include desctop-md {
       right: 50px;
     }
+    @include pad-xs {
+      right: 0;
+    }
+    @include phone-md {
+      width: 100px;
+      height: 100px;
+      top: -155px;
+    }
   }
   @include desctop-md {
     width: $sm;
   }
-  @include pad-md {
+  @include pad-lg {
     width: 720px;
     margin: 100px auto;
+  }
+  @include pad-xs {
+    width: 100%;
   }
 }
 
@@ -80,14 +91,18 @@
         transform: translate(3px, -50%) rotate(45deg);
       }
     }
-    
     .select__content {
       opacity: 1;
     }
-    
     .select__label + .select__input + .select__label {
       max-height: 40px;
       border-top-width: 1px;
+      @include phone-md {
+        width: 260px;
+      }
+      @include phone-xs {
+        width: 210px;
+      }
     }
   }
 }
@@ -113,6 +128,12 @@
     .select__label--data + .select__input + .select__label--data {
       max-height: 40px;
       border-top-width: 1px;
+      @include phone-md {
+        width: 260px;
+      }
+      @include phone-xs {
+        width: 210px;
+      }
     }
   }
 }
@@ -138,6 +159,12 @@
     .select__label--time + .select__input + .select__label--time {
       max-height: 40px;
       border-top-width: 1px;
+      @include phone-md {
+        width: 260px;
+      }
+      @include phone-xs {
+        width: 210px;
+      }
     }
   }
 }
@@ -178,6 +205,12 @@
     &::after {
       background-color: $accent;
     }
+  }
+  @include phone-md {
+    width: 260px;
+  }
+  @include phone-xs {
+    width: 210px;
   }
 }
 
