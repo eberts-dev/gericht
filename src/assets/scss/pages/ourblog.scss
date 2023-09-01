@@ -104,7 +104,8 @@
   }
 }
 
-.categories__themes {
+.categories__themes,
+.categories__post {
   background: $input;
   padding: 32px;
   margin: 32px 0;
@@ -157,10 +158,49 @@
   }
 }
 
-.themes-menu {
+.themes,
+.categories__post-name {
   font-family: 'Cormorant Upright', serif;
   color: $accent;
   font-size: 32px;
   font-weight: 400;
-  line-height: 130%
+  line-height: 130%;
+  padding-bottom: 33px;
+}
+
+.themes-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  gap: 15px;
+  span {
+    font-family: 'Open Sans', sans-serif;
+    color: $description;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+  }
+}
+
+.themes-item {
+  :last-child {
+    padding-bottom: 0;
+  }
+}
+
+.themes-side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.categories__post {
+  .item-data {
+   padding: 32px 0;
+  }
+  .categories__name {
+    margin: 0;
+  }
 }
