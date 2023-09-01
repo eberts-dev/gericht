@@ -90,7 +90,7 @@
     top: -22px;
     right: -22px;
     left: auto;
-    background: #DCCA87;
+    background: $accent;
     @include pad-lg {
       width: 235px;
       height: 235px;
@@ -135,6 +135,10 @@
   }
   img {
     position: relative;
+    @include desctop-xs {
+      width: 478px;
+      height: auto;
+    }
     @include pad-lg {
       width: 378px;
       height: auto;
