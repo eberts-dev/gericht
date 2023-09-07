@@ -47,13 +47,13 @@
 }
 
 .categories__list {
-  gap: 32px;
+  column-gap: 32px;
   width: 856px;
 }
 
 .categories__item {
   width: 412px;
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
 
 .categories__list {
@@ -258,4 +258,17 @@
 .categories__social {
   display: flex;
   justify-content: space-between;
+  width: 104px;
+  & .categories__social-item a svg {
+    fill: $accent-light;
+  }
+  & .categories__social-item a svg:hover {
+    fill: $accent;
+    transition: .2s;
+  }
+}
+
+.categories__more {
+  margin: 0 auto;
+  height: 27px
 }
