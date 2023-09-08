@@ -28,20 +28,6 @@ h1 {
   font-family: 'Cormorant Upright', serif;
 }
 
-.title {
-  font-size: 64px;
-  font-family: 'Cormorant Upright', serif;
-  color: $accent;
-  line-height: 130%;
-  font-weight: 600;
-  @include pad-md {
-    font-size: 50px;
-  }
-  @include phone-xs {
-    font-size: 45px;
-  }
-}
-
 .description {
   font-family: 'Open Sans';
   color: $description;

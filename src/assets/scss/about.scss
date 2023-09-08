@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 0 130px;
+  padding: 220px 0 130px;
   @include phone-md {
     flex-wrap: wrap;
     gap: 30px;
@@ -73,6 +73,9 @@
     right: 0;
     left: auto;
     top: 85px;
+    @include pad-lg {
+      top: 70px;
+    }
   }
 }
 
