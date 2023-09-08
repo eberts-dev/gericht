@@ -19,8 +19,11 @@
     width: 61px;
     height: 113px;
     bottom: 30px;
-    right: 140px;
+    right: 120px;
     left: auto;
+    @include desctop-md {
+      display: none;
+    }
   }
 }
 

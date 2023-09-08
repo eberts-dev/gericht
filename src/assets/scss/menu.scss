@@ -2,6 +2,9 @@
 
 .wrapper-pad {
   max-width: $md;
+  @include pad-md {
+    width: $xs;
+  }
 }
 
 .component-menu {
@@ -19,10 +22,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
-  @include phone-md {
+  @include phone-lg {
     gap: 33px;
     justify-content: center;
   }
+
 }
 
 .menu__btn-wrapper {
@@ -181,6 +185,7 @@
       }
       @include phone-xs {
         font-size: 14px;
+        right: -6px;
       }
     }
   }

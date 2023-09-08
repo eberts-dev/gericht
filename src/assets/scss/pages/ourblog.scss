@@ -5,6 +5,9 @@
   background-size: cover;
   height: 619px;
   margin-bottom: 152px;
+  @include pad-xs {
+    height: 555px;
+  }
 }
 
 .ourblog__container {
@@ -13,7 +16,10 @@
   & .ourblog__title {
     font-size: 90px;
     padding-bottom: 14px;
-    line-height: 130%
+    line-height: 130%;
+    @include phone-xs {
+      font-size: 65px;
+    }
   }
 }
 
@@ -44,13 +50,26 @@
 .categories__list {
   display: flex;
   justify-content: space-between;
+  @include pad-xs {
+    justify-content: center;
+  }
+}
+
+.categories__items {
+  @include phone-lg {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .categories__list {
   column-gap: 32px;
   width: 856px;
-  @include pad-xs {
-    width: 250px;
+  @include pad-md {
+    width: 350px;
+  }
+  @include phone-lg {
+    width: 330px;
   }
 }
 
@@ -58,8 +77,11 @@
   width: 412px;
   margin-bottom: 20px;
   &:nth-child(4) {
-    @include pad-xs {
+    @include pad-md {
       display: none;
+    }
+    @include phone-lg {
+      display: block;
     }
   }
   &:nth-child(3) {
@@ -67,15 +89,23 @@
       margin-bottom: 50px;
     }
   }
-  @include pad-xs {
-    width: 250px;
+  @include pad-lg {
+    width: 300px;
   }
-
+  @include pad-xs {
+    width: 300px;
+  }
+  @include phone-lg {
+    width: 330px;
+  }
 }
 
 
 .categories__list {
   flex-wrap: wrap;
+  @include phone-lg {
+    margin-bottom: 50px;
+  }
 }
 
 .item-data {
@@ -103,11 +133,10 @@
 
 .categories__img {
   margin-bottom: 24px;
-  @include pad-xs {
+  @include pad-lg {
     width: 100%;
     height: auto;
   }
-
 }
 
 .categories__description {
@@ -130,8 +159,14 @@
 
 .categories__menu {
   width: 375px;
+  @include pad-md {
+    width: 335px;
+  }
   @include pad-xs {
-    width: 249px;
+    width: 300px;
+  }
+  @include phone-lg {
+    width: 330px;
   }
   .categories__seach {
     background: $input;
@@ -193,7 +228,19 @@
     line-height: 175%;
     font-size: 16px;
   }
+  @include pad-md {
+    padding-right: 66px;
+    max-width: 206px;
+  }
   @include pad-xs {
+    padding-right: 60px;
+    max-width: 175px;
+  }
+  @include phone-lg {
+    padding-right: 66px;
+    max-width: 201px;
+  }
+  @include phone-xs {
     padding-right: 35px;
     max-width: 150px;
   }
@@ -236,8 +283,14 @@
 }
 
 .themes-img {
+  @include pad-md {
+    width: 100%;
+  }
   @include pad-xs {
-    width: 30px;
+    width: 70px;
+  }
+  @include phone-lg {
+    width: 100%
   }
 }
 
@@ -343,5 +396,8 @@
   height: 27px;
   @include pad-xs {
     margin: 0;
+  }
+  @include phone-lg {
+    margin: 0 auto
   }
 }

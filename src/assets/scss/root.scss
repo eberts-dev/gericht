@@ -40,6 +40,10 @@ $text-b: 50px;
   @media (max-width: 480px) { @content; }
 }
 
+@mixin phone-lg {
+  @media (max-width: 560px) { @content; }
+}
+
 @mixin pad-xs {
   @media (max-width: 780px) { @content; }
 }
@@ -73,12 +77,23 @@ $text-b: 50px;
     max-width: $sm-small;
   }
   @include pad-md {
-    max-width: $xs;
+    max-width: $sm-small;
   }
-  @include phone-md {
+  @include phone-lg {
     width: $s;
   }
   @include phone-xs {
     width: 290px;
+  }
+}
+
+.title {
+  font-size: 64px;
+  font-family: 'Cormorant Upright', serif;
+  color: $accent;
+  line-height: 130%;
+  font-weight: 600;
+  @include pad-lg {
+    font-size: 45px;
   }
 }

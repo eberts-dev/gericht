@@ -38,14 +38,17 @@ footer {
     @include desctop-xs {
       left: 0;
     }
-    @include phone-md {
-      width: 100px;
-      height: 100px;
-    }
-    @include pad-xs {
+    @include desctop-xs {
       right: 0;
       left: auto;
       top: -249px;
+    }
+    @include phone-lg {
+      display: none;
+    }
+    @include phone-md {
+      width: 100px;
+      height: 100px;
     }
   }
 }
