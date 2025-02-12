@@ -11,6 +11,11 @@
   display: flex;
   justify-content: center;
   padding: 152px 0;
+  @include pad {
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 40px 0;
+  }
 }
 
 .chef__info {

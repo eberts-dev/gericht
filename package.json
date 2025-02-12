@@ -1,9 +1,9 @@
 {
-  "name": "assembl-site",
+  "name": "gericht",
   "version": "1.0.0",
   "description": "assembly-site",
   "author": "eberts",
-  "homepage": "https://rumforweb.github.io/gericht",
+  "homepage": "https://eberts-dev.github.io/gericht/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

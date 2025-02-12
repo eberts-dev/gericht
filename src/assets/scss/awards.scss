@@ -77,6 +77,8 @@
   row-gap: 64px;
 }
 
-
-
-
+.awards__picture {
+  @include pad {
+    display: none;
+  }
+}

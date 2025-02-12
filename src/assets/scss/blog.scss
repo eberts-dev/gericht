@@ -87,6 +87,9 @@
   display: flex;
   justify-content: center;
   gap: 37px;
+  @include pad {
+    flex-wrap: wrap;
+  }
 }
 
 .blog__more-btn {

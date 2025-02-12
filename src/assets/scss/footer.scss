@@ -89,6 +89,11 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 80px;
+  @include pad {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .contact__title {
@@ -114,6 +119,9 @@ footer {
   padding: 0 228px 0 126px;
   @include desctop-xs {
     padding: 0px 134px 0 66px;
+  }
+  @include pad {
+    padding: 0;
   }
 }
 

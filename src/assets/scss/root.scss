@@ -41,6 +41,9 @@ $text-l: 23px;
 @mixin pad-xs {
   @media (max-width: 768px) { @content; }
 }
+@mixin pad {
+  @media (max-width: 968px) { @content; }
+}
 @mixin pad-md {
   @media (max-width: 1170px) { @content; }
 }

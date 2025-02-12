@@ -7,16 +7,20 @@
   gap: 160px;
   align-items: center;
   padding: 48px 0 162px 0;
-  @include pad-md {
-    gap: 70px;
+  @include pad-xs {
+    flex-wrap: wrap;
+  }
+  @include pad {
+    flex-wrap: wrap;
+    gap: 80px;
   }
   & .slide__content {
     max-width: 453px;
     @include desctop-xs {
       max-width: $xs;
     }
-    @include pad-md {
-     max-width: $s;
+    @include pad {
+      width: 100%;
     }
   }
 }
