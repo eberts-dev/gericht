@@ -2,4 +2,10 @@
 
 The Gericht project, restaurant theme
 	
-https://eberts-dev.github.io/gericht/
+## Запуск
+
+```shell
+    npm i
+    gulp build
+    gulp
+```
