@@ -4,8 +4,8 @@ The Gericht project, restaurant theme
 	
 ## Запуск
 
-```shell
-    npm i
-    gulp build
-    gulp
+```
+npm i
+gulp build
+gulp
 ```
