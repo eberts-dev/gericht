@@ -13,8 +13,6 @@
   padding: 152px 0;
   @include pad {
     flex-wrap: wrap;
-    gap: 80px;
-    padding: 40px 0;
   }
 }
 
@@ -53,6 +51,9 @@
       padding-left: 54px;
     }
   }
+  @include phone-xs {
+    font-size: 14px;
+  }
 }
 
 .chef__signature {
@@ -75,6 +76,9 @@
 .chef__img {
   position: relative;
   margin-right: 120px;
+  @include pad-lg {
+    margin-right: 0;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -83,7 +87,19 @@
     top: -22px;
     right: -22px;
     left: auto;
-    background: #DCCA87;
+    background: $accent;
+    @include pad-lg {
+      width: 235px;
+      height: 235px;
+    }
+    @include phone-md {
+      width: 170px;
+      height: 170px;
+    }
+    @include phone-xs {
+      top: -12px;
+      right: -12px;
+    }
   }
   &::after {
     content: "";
@@ -98,10 +114,37 @@
     @include desctop-md {
       bottom: 88px;
       width: 330px;
-      height: 330px;
+      height: auto;
+    }
+    @include pad-lg {
+      width: 235px;
+      height: 235px;
+      bottom: -20px;
+    }
+    @include phone-md {
+      width: 170px;
+      height: 170px;
+    }
+    @include phone-xs {
+      bottom: -12px;
+      left: -12px;
     }
   }
-  & img {
+  img {
     position: relative;
+    @include desctop-xs {
+      width: 478px;
+      height: auto;
+    }
+    @include pad-lg {
+      width: 378px;
+      height: auto;
+    }
+    @include phone-md {
+      width: 315px;
+    }
+    @include phone-xs {
+      width: 260px;
+    }
   }
 }

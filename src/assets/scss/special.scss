@@ -3,11 +3,20 @@
 .special {
   background: $page-color;
   margin: 0 0 152px; 
+  @include phone-xs {
+    margin: 0 0 50px; 
+  }
 }
 
 .special__title {
   text-align: center;
   padding: 152px 0 64px;
+  @include pad-lg {
+    padding: 0;
+  }
+  @include pad-xs {
+    padding-bottom: 64px;
+  }
 }
 
 .special__subtitle {
@@ -22,6 +31,9 @@
 
 .special__side {
   width: 412px;
+  @include phone-xs {
+    width: 290px;
+  }
 }
 
 .special__container {
@@ -29,6 +41,9 @@
   justify-content: center;
   @include desctop-md {
    gap: 70px;
+  }
+  @include pad-xs {
+    flex-wrap: wrap;
   }
 }
 
@@ -46,6 +61,9 @@
   font-size: 23px;
   line-height: 130%;
   width: 192px;
+  @include phone-xs {
+    width: 162px;
+  }
 }
 
 .list-title__line {
@@ -55,6 +73,9 @@
   background: $line;
   position: relative;
   top: 16px;
+  @include phone-xs {
+    width: 60px;
+  }
 }
 
 .side__prise {
@@ -100,6 +121,9 @@
   margin: 65px 0 0;
   .special__more {
     width: 136px;
+  }
+  @include phone-xs {
+    margin: 20px 0 0;
   }
 }
 

@@ -12,6 +12,7 @@
 @import 'blog.scss';
 @import 'gallery.scss';
 @import 'footer.scss';
+@import 'pages/ourblog.scss';
 
 
 body {
@@ -27,14 +28,6 @@ h1 {
   font-family: 'Cormorant Upright', serif;
 }
 
-.title {
-  font-size: 64px;
-  font-family: 'Cormorant Upright', serif;
-  color: $accent;
-  line-height: 130%;
-  font-weight: 600;
-}
-
 .description {
   font-family: 'Open Sans';
   color: $description;
@@ -43,8 +36,8 @@ h1 {
   font-size: 16px;
   line-height: 175%;
   padding: 0 0 32px 0;
-  @media (max-width:1400px) {
-      font-size: 13px;
+  @include desctop-xs {
+    font-size: 13px;
   }
 }
 

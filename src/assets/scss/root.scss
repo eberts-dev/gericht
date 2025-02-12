@@ -11,6 +11,7 @@ $job: #F5EFDB;
 $block: #0c0c0c;
 $optional: #0c0c0c69;
 $optiona2: #0c0c0c17;
+$input: #242424;
 $black-overlay: rgba(4, 4, 4, 0.5);
 $border: rgba(220, 202, 135, 0.20);
 $box-shadow: rgba(0, 0, 0, 0.70);
@@ -19,32 +20,40 @@ $box-shadow: rgba(0, 0, 0, 0.70);
 
 $lg: 1520px;
 $md: 1300px;
-$sm: 960px;
+$sm: 920px;
 $sm-small: 720px;
-$xs: 480px;
+$xs: 526px;
 $s: 360px;
 
 // global font-size
 
 $text-m: 16px;
 $text-l: 23px;
+$text-b: 50px;
 
 // global breckpoints
 
 @mixin phone-xs {
-  @media (max-width: 320px) { @content; }
+  @media (max-width: 420px) { @content; }
 }
 @mixin phone-md {
-  @media (max-width: 425px) { @content; }
+  @media (max-width: 480px) { @content; }
+}
+
+@mixin phone-lg {
+  @media (max-width: 560px) { @content; }
 }
 
 @mixin pad-xs {
-  @media (max-width: 768px) { @content; }
+  @media (max-width: 780px) { @content; }
 }
 @mixin pad {
   @media (max-width: 968px) { @content; }
 }
 @mixin pad-md {
+  @media (max-width: 980px) { @content; }
+}
+@mixin pad-lg {
   @media (max-width: 1170px) { @content; }
 }
 
@@ -67,7 +76,27 @@ $text-l: 23px;
   @include desctop-xs {
     max-width: $sm;
   }
+  @include pad-lg {
+    max-width: $sm-small;
+  }
   @include pad-md {
     max-width: $sm-small;
+  }
+  @include phone-lg {
+    width: $s;
+  }
+  @include phone-xs {
+    width: 290px;
+  }
+}
+
+.title {
+  font-size: 64px;
+  font-family: 'Cormorant Upright', serif;
+  color: $accent;
+  line-height: 130%;
+  font-weight: 600;
+  @include pad-lg {
+    font-size: 45px;
   }
 }

@@ -26,11 +26,34 @@
   @include desctop-xs {
     padding-left: 300px;
   }
+  @include pad-md {
+    padding-left: 500px;
+  }
+  @include pad-xs {
+    padding-left: 560px;
+  }
+  @include phone-md {
+    padding: 0;
+    margin: 0 auto;
+    width: 360px;
+  }
+  @include phone-xs {
+    width: 280px;
+  }
 }
 
 .gallety__content {
   width: 455px;
   margin-right: 64px;
+  @include pad-md {
+    margin-right: 0;
+  }
+  @include pad-xs {
+    width: 400px;
+  }
+  @include phone-xs {
+    width: 290px;
+  }
 }
 
 .gallery__subtitle {
@@ -51,19 +74,21 @@
   line-height: 175%;
   color: $description;
   padding: 24px 0;
+  @include pad-md {
+    width: 380px;
+  }
+  @include phone-xs {
+    width: 290px;
+  }
 }
-
-// .gallery {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   overflow: hidden;
-// }
 
 .gallety__pictures {
   display: flex;
   flex-wrap: nowrap;
   width: 680px;
+  @include phone-md {
+    display: none;
+  }
 }
 
 .gallety__pictures a {

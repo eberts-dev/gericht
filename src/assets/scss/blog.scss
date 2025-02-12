@@ -16,12 +16,28 @@
     @include desctop-xs {
       bottom: 0;
     }
+    @include pad-md {
+      right: 120px;
+    }
+    @include pad-xs {
+      right: 50px;
+    }
+    @include phone-md {
+      width: 100px;
+      height: 100px;
+    }
+    @include phone-xs {
+      bottom: -56px;
+    }
   }
 }
 
 .blog__title {
   text-align: center;
   padding: 152px 0 64px;
+  @include phone-md {
+    padding: 100px 0 64px;
+  }
 }
 
 .blog__subtitle {
@@ -79,6 +95,10 @@
     img {
       width: 312px;
       height: 338px;
+      @include phone-xs {
+        width: 280px;
+        height: auto;
+      }
     }
   }
 }

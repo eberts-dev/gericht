@@ -3,12 +3,18 @@
 .carte {
   background: url('../images/main/carte.jpg') center no-repeat;
   background-size: cover;
+  @include pad-lg {
+    background-size: contain;
+  }
 }
 
 .carte__list {
   padding-top: 261px;
   padding-bottom: 261px;
   position: relative;
+  @include phone-md {
+    padding: 150px 0;
+  }
   &::before {
     content: '';
     background: url('../images/icons/seal.svg') top no-repeat;
@@ -17,9 +23,17 @@
     width: 146px;
     height: 146px;
     top: 0;
+    @include phone-md {
+      width: 100px;
+      height: 100px;
+      top: -40px;
+    }
   }
   & .carte__list-item {
     margin-bottom: 64px;
+    @include pad-xs {
+      margin-bottom: 10px;
+    }
   }
   & .carte__list-item:last-child {
     margin-bottom: 0px;
@@ -34,5 +48,11 @@
   line-height: 130%;
   &:hover {
     text-decoration: underline;
+  }
+  @include pad-md {
+    font-size: 50px;
+  }
+  @include phone-md {
+    font-size: 35px;
   }
 }

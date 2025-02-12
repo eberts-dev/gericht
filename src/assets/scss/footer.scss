@@ -6,6 +6,15 @@ footer {
   margin-top: 300px;
 }
 
+.title__letter {
+  @include pad-md {
+    font-size: 50px;
+  }
+  @include phone-xs {
+    font-size: 36px;
+  }
+}
+
 .newsletter {
   margin-top: 113px;
 }
@@ -29,6 +38,18 @@ footer {
     @include desctop-xs {
       left: 0;
     }
+    @include desctop-xs {
+      right: 0;
+      left: auto;
+      top: -249px;
+    }
+    @include phone-lg {
+      display: none;
+    }
+    @include phone-md {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -51,6 +72,10 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 64px;
+  @include pad-xs {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
 }
 
 .newsletter__description {
@@ -71,6 +96,15 @@ footer {
   @include desctop-xs {
     width: 450px;
   }
+  @include pad-md {
+    width: 300px;
+  }
+  @include pad-xs {
+    margin-right: 0;
+  }
+  @include phone-md {
+    width: 198px;
+  }
   &::placeholder {
     font-family: 'Cormorant Upright', serif;
     font-size: 16px;
@@ -90,9 +124,8 @@ footer {
   align-items: center;
   padding-bottom: 80px;
   @include pad {
-    flex-wrap: wrap;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
   }
 }
 
@@ -163,6 +196,9 @@ footer {
 
 .working {
   text-align: center;
+  @include pad-lg {
+    order: 3;
+  }
 }
 
 .working__name {
