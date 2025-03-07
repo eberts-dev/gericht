@@ -1,6 +1,6 @@
 # gericht
 
-The Gericht project, restaurant theme
+Проект - https://eberts-dev.github.io/gericht/dist/index.html
 	
 ## Запуск
 
