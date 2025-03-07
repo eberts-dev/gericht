@@ -1,0 +1,134 @@
+.wrapper {
+    max-width: 1520px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1680px) {
+    .wrapper {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        max-width: 920px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrapper {
+        width: 360px;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        width: 290px;
+    }
+}
+
+.title {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+@media (max-width: 1170px) {
+    .title {
+        font-size: 45px;
+    }
+}
+
+.carte {
+    background: url("../images/main/carte.jpg") center no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1170px) {
+    .carte {
+        background-size: contain;
+    }
+}
+
+.carte__list {
+    padding-top: 261px;
+    padding-bottom: 261px;
+    position: relative;
+}
+
+@media (max-width: 480px) {
+    .carte__list {
+        padding: 150px 0;
+    }
+}
+
+.carte__list::before {
+    content: "";
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    top: 0;
+}
+
+@media (max-width: 480px) {
+    .carte__list::before {
+        width: 100px;
+        height: 100px;
+        top: -40px;
+    }
+}
+
+.carte__list .carte__list-item {
+    margin-bottom: 64px;
+}
+
+@media (max-width: 780px) {
+    .carte__list .carte__list-item {
+        margin-bottom: 10px;
+    }
+}
+
+.carte__list .carte__list-item:last-child {
+    margin-bottom: 0px;
+}
+
+.carte__list-link {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 130%;
+}
+
+.carte__list-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+    .carte__list-link {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carte__list-link {
+        font-size: 35px;
+    }
+}

@@ -13,45 +13,45 @@
 @import 'gallery.scss';
 @import 'footer.scss';
 @import 'pages/ourblog.scss';
-
+@import 'contact.scss';
 
 body {
-  margin: 0;
-  font-family: 'Cormorant Upright', serif;
-  font-family: 'Open Sans', sans-serif;
-  background: $page-color;
+	margin: 0;
+	font-family: 'Cormorant Upright', serif;
+	font-family: 'Open Sans', sans-serif;
+	background: $page-color;
 }
 
 h1 {
-  font-size: 70px;
-  color: $accent;
-  font-family: 'Cormorant Upright', serif;
+	font-size: 70px;
+	color: $accent;
+	font-family: 'Cormorant Upright', serif;
 }
 
 .description {
-  font-family: 'Open Sans';
-  color: $description;
-  letter-spacing: 0.04em;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 175%;
-  padding: 0 0 32px 0;
-  @include desctop-xs {
-    font-size: 13px;
-  }
+	font-family: 'Open Sans';
+	color: $description;
+	letter-spacing: 0.04em;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 175%;
+	padding: 0 0 32px 0;
+	@include desctop-xs {
+		font-size: 13px;
+	}
 }
 
 .button {
-  font-family: 'Cormorant Upright';
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 175%;
-  display: inline-block;
-  padding: 8px 0;
-  width: 157px;
-  text-align: center;
-  background: $accent;
-  color: $page-color;
+	font-family: 'Cormorant Upright';
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 175%;
+	display: inline-block;
+	padding: 8px 0;
+	width: 157px;
+	text-align: center;
+	background: $accent;
+	color: $page-color;
 }
 
 @import 'menu.scss';

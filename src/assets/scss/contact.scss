@@ -1,0 +1,17 @@
+@import 'root.scss';
+
+.contact__container {
+	padding: 162px 0 0;
+	@include pad {
+		flex-wrap: wrap;
+	}
+}
+
+.contact__error {
+	padding: 0 0 76px;
+	text-align: left;
+	font-size: 32px;
+	font-family: 'Cormorant Upright', serif;
+	color: $accent-light;
+	padding-bottom: 24px;
+}

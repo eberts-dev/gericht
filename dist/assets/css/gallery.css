@@ -1,0 +1,212 @@
+.wrapper {
+    max-width: 1520px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1680px) {
+    .wrapper {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        max-width: 920px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrapper {
+        width: 360px;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        width: 290px;
+    }
+}
+
+.title {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+@media (max-width: 1170px) {
+    .title {
+        font-size: 45px;
+    }
+}
+
+.gallery {
+    background: url("../images/main/photo-bg.png") top no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.gallery__overlay {
+    background: rgba(4, 4, 4, 0.5);
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 128px 0;
+}
+
+.gallery__wrapper {
+    margin: 0;
+    width: 1300px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@media (max-width: 1366px) {
+    .gallery__wrapper {
+        padding-left: 300px;
+    }
+}
+
+@media (max-width: 980px) {
+    .gallery__wrapper {
+        padding-left: 500px;
+    }
+}
+
+@media (max-width: 780px) {
+    .gallery__wrapper {
+        padding-left: 560px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery__wrapper {
+        padding: 0;
+        margin: 0 auto;
+        width: 360px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery__wrapper {
+        width: 280px;
+    }
+}
+
+.gallety__content {
+    width: 455px;
+    margin-right: 64px;
+}
+
+@media (max-width: 980px) {
+    .gallety__content {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .gallety__content {
+        width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallety__content {
+        width: 290px;
+    }
+}
+
+.gallery__subtitle {
+    position: relative;
+}
+
+.gallery__subtitle::before {
+    content: "";
+    left: 0;
+    right: auto;
+    top: 35px;
+}
+
+.gallery__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 175%;
+    color: #AAAAAA;
+    padding: 24px 0;
+}
+
+@media (max-width: 980px) {
+    .gallery__description {
+        width: 380px;
+    }
+}
+
+@media (max-width: 420px) {
+    .gallery__description {
+        width: 290px;
+    }
+}
+
+.gallety__pictures {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 680px;
+}
+
+@media (max-width: 480px) {
+    .gallety__pictures {
+        display: none;
+    }
+}
+
+.gallety__pictures a {
+    display: inline-block;
+    margin-right: 32px;
+    position: relative;
+}
+
+.gallety__pictures a:hover {
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.gallety__pictures a:hover::before {
+    content: "";
+    background: url(../images/icons/instagram.svg) center no-repeat;
+    width: 52px;
+    height: 52px;
+    top: 200px;
+    left: 126px;
+    position: absolute;
+    z-index: 2;
+    transition: 0.2s;
+}
+
+.gallety__pictures a > img:last-child {
+    margin-right: 0;
+}
+
+.gallety__pictures a > img:hover {
+    opacity: 0.4;
+    transition: 0.2s;
+}

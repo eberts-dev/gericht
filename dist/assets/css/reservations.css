@@ -1,0 +1,397 @@
+.wrapper {
+    max-width: 1520px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1680px) {
+    .wrapper {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        max-width: 920px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 980px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 560px) {
+    .wrapper {
+        width: 360px;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper {
+        width: 290px;
+    }
+}
+
+.title {
+    font-size: 64px;
+    font-family: "Cormorant Upright", serif;
+    color: #DCCA87;
+    line-height: 130%;
+    font-weight: 600;
+}
+
+@media (max-width: 1170px) {
+    .title {
+        font-size: 45px;
+    }
+}
+
+.reservations {
+    background: #0C0B08;
+}
+
+.reservations__container {
+    width: 1366px;
+    margin: 157px auto;
+    border: 1px solid rgba(220, 202, 135, 0.1254901961);
+    background: #0C0B08;
+    position: relative;
+}
+
+.reservations__container::after {
+    content: "";
+    position: absolute;
+    top: -186px;
+    left: auto;
+    right: -125px;
+    width: 146px;
+    height: 146px;
+    background: url("../images/icons/seal.svg") top no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 1680px) {
+    .reservations__container::after {
+        right: 50px;
+    }
+}
+
+@media (max-width: 780px) {
+    .reservations__container::after {
+        right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservations__container::after {
+        width: 100px;
+        height: 100px;
+        top: -155px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .reservations__container {
+        width: 920px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .reservations__container {
+        width: 720px;
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 780px) {
+    .reservations__container {
+        width: 100%;
+    }
+}
+
+.reservations__subtitle::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.reservations__form {
+    padding: 48px 0;
+    text-align: center;
+}
+
+.reservations__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0;
+}
+
+@media (max-width: 1680px) {
+    .reservations__select {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.reservations_button {
+    border: none;
+    display: block;
+    cursor: pointer;
+}
+
+.select {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select[data-state=active] .select__title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select[data-state=active] .select__title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select[data-state=active] .select__content {
+    opacity: 1;
+}
+
+.select[data-state=active] .select__label + .select__input + .select__label {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+@media (max-width: 480px) {
+    .select[data-state=active] .select__label + .select__input + .select__label {
+        width: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .select[data-state=active] .select__label + .select__input + .select__label {
+        width: 210px;
+    }
+}
+
+.select__data {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select__data[data-calender=active] .select__data--title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select__data[data-calender=active] .select__data--title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select__data[data-calender=active] .select__content--data {
+    opacity: 1;
+}
+
+.select__data[data-calender=active] .select__label--data + .select__input + .select__label--data {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+@media (max-width: 480px) {
+    .select__data[data-calender=active] .select__label--data + .select__input + .select__label--data {
+        width: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .select__data[data-calender=active] .select__label--data + .select__input + .select__label--data {
+        width: 210px;
+    }
+}
+
+.select__time {
+    position: relative;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.select__time[data-time=active] .select__time--title::before {
+    transform: translate(-3px, -50%) rotate(-45deg);
+}
+
+.select__time[data-time=active] .select__time--title::after {
+    transform: translate(3px, -50%) rotate(45deg);
+}
+
+.select__time[data-time=active] .select__content--time {
+    opacity: 1;
+}
+
+.select__time[data-time=active] .select__label--time + .select__input + .select__label--time {
+    max-height: 40px;
+    border-top-width: 1px;
+}
+
+@media (max-width: 480px) {
+    .select__time[data-time=active] .select__label--time + .select__input + .select__label--time {
+        width: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .select__time[data-time=active] .select__label--time + .select__input + .select__label--time {
+        width: 210px;
+    }
+}
+
+.select__title,
+.select__data--title,
+.select__time--title {
+    display: flex;
+    align-items: center;
+    width: 378px;
+    height: 100%;
+    color: #AAAAAA;
+    font-family: "Cormorant Upright";
+    font-size: 16px;
+    border: solid 1px #AAAAAA;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+
+.select__title::before, .select__title::after,
+.select__data--title::before,
+.select__data--title::after,
+.select__time--title::before,
+.select__time--title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    transition: all 0.3s ease-out;
+    background-color: #AAAAAA;
+    transform: translate(-3px, -50%) rotate(45deg);
+}
+
+.select__title::after,
+.select__data--title::after,
+.select__time--title::after {
+    transform: translate(3px, -50%) rotate(-45deg);
+}
+
+.select__title:hover,
+.select__data--title:hover,
+.select__time--title:hover {
+    border-color: #AAAAAA;
+}
+
+.select__title:hover::before, .select__title:hover::after,
+.select__data--title:hover::before,
+.select__data--title:hover::after,
+.select__time--title:hover::before,
+.select__time--title:hover::after {
+    background-color: #DCCA87;
+}
+
+@media (max-width: 480px) {
+    .select__title,
+  .select__data--title,
+  .select__time--title {
+        width: 260px;
+    }
+}
+
+@media (max-width: 420px) {
+    .select__title,
+  .select__data--title,
+  .select__time--title {
+        width: 210px;
+    }
+}
+
+.select__content,
+.select__content--data,
+.select__content--time {
+    position: absolute;
+    top: 49px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 34px);
+    background-color: #0C0B08;
+    border: 1px solid #AAAAAA;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    z-index: 8;
+}
+
+.select__input {
+    display: none;
+}
+
+.select__input:checked + label {
+    background-color: #0C0B08;
+    font-family: "Cormorant Upright";
+    font-size: 16px;
+    font-weight: 600;
+    color: #DCCA87;
+}
+
+.select__input:disabled + label {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.select__label,
+.select__label--data,
+.select__label--time {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Cormorant Upright";
+    font-weight: 600;
+    width: 378px;
+    height: 40px;
+    max-height: 0;
+    padding: 0 16px;
+    color: #AAAAAA;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.select__label + input + .select__label,
+.select__label + input + .select__label--data,
+.select__label + input + .select__label--time,
+.select__label--data + input + .select__label,
+.select__label--data + input + .select__label--data,
+.select__label--data + input + .select__label--time,
+.select__label--time + input + .select__label,
+.select__label--time + input + .select__label--data,
+.select__label--time + input + .select__label--time {
+    border-top: 0 solid rgba(199, 204, 209, 0.3764705882);
+}
+
+.select__label:hover,
+.select__label--data:hover,
+.select__label--time:hover {
+    background-color: #0C0B08 !important;
+    color: #DCCA87;
+}

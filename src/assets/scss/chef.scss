@@ -1,150 +1,150 @@
 @import 'root.scss';
 
 .chef {
-  background: url('../images/main/about.jpg') center no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
+	background: url('../images/main/about.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: -1;
 }
 
-.chef__container  {
-  display: flex;
-  justify-content: center;
-  padding: 152px 0;
-  @include pad {
-    flex-wrap: wrap;
-  }
+.chef__container {
+	display: flex;
+	justify-content: center;
+	padding: 152px 0;
+	@include pad {
+		flex-wrap: wrap;
+	}
 }
 
 .chef__info {
-  max-width: 570px;
+	max-width: 570px;
 }
 
 .chef__title {
-  padding: 0 0 76px;
+	padding: 0 0 76px;
 }
 
 .chef__description {
-  color: $description;
-  font-size: 16px;
-  line-height: 175%;
-  font-family: 'Open Sans', sans-serif;
-  font-style: italic;
-  position: relative;
-  padding: 0 0 64px;
-  &::before {
-    content: '';
-    background: url('../images/icons/quotes.svg') bottom no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 47px;
-    height: 40px;
-    top: -5px;
-  }
-  & .description__title {
-    padding: 10px 0 0 55px;
-    display: block;
-  }
-  & .description__text {
-    display: block;
-    @include desctop-md {
-      padding-left: 54px;
-    }
-  }
-  @include phone-xs {
-    font-size: 14px;
-  }
+	color: $description;
+	font-size: 16px;
+	line-height: 175%;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	position: relative;
+	padding: 0 0 64px;
+	&::before {
+		content: '';
+		background: url('../images/icons/quotes.svg') bottom no-repeat;
+		background-size: cover;
+		position: absolute;
+		width: 47px;
+		height: 40px;
+		top: -5px;
+	}
+	& .description__title {
+		padding: 10px 0 0 55px;
+		display: block;
+	}
+	& .description__text {
+		display: block;
+		@include desctop-md {
+			padding-left: 54px;
+		}
+	}
+	@include phone-xs {
+		font-size: 14px;
+	}
 }
 
 .chef__signature {
-  padding: 0 0 64px;
-  & .signature__name {
-    color: $accent;
-    font-size: 32px;
-    font-family: 'Cormorant Upright';
-    display: block;
-    padding: 0 0 8px;
-  }
-  & .signature__job {
-    color: $description;
-    font-size: 16px;
-    display: block;
-    font-family: 'Open Sans';
-  }
+	padding: 0 0 64px;
+	& .signature__name {
+		color: $accent;
+		font-size: 32px;
+		font-family: 'Cormorant Upright';
+		display: block;
+		padding: 0 0 8px;
+	}
+	& .signature__job {
+		color: $description;
+		font-size: 16px;
+		display: block;
+		font-family: 'Open Sans';
+	}
 }
 
 .chef__img {
-  position: relative;
-  margin-right: 120px;
-  @include pad-lg {
-    margin-right: 0;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 435px;
-    height: 435px;
-    top: -22px;
-    right: -22px;
-    left: auto;
-    background: $accent;
-    @include pad-lg {
-      width: 235px;
-      height: 235px;
-    }
-    @include phone-md {
-      width: 170px;
-      height: 170px;
-    }
-    @include phone-xs {
-      top: -12px;
-      right: -12px;
-    }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 435px;
-    height: 435px;
-    bottom: -22px;
-    right: auto;
-    left: -22px;
-    background: #DCCA87;
-    z-index: -1;
-    @include desctop-md {
-      bottom: 88px;
-      width: 330px;
-      height: auto;
-    }
-    @include pad-lg {
-      width: 235px;
-      height: 235px;
-      bottom: -20px;
-    }
-    @include phone-md {
-      width: 170px;
-      height: 170px;
-    }
-    @include phone-xs {
-      bottom: -12px;
-      left: -12px;
-    }
-  }
-  img {
-    position: relative;
-    @include desctop-xs {
-      width: 478px;
-      height: auto;
-    }
-    @include pad-lg {
-      width: 378px;
-      height: auto;
-    }
-    @include phone-md {
-      width: 315px;
-    }
-    @include phone-xs {
-      width: 260px;
-    }
-  }
+	position: relative;
+	margin-right: 120px;
+	@include pad-lg {
+		margin-right: 0;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		width: 435px;
+		height: 435px;
+		top: -22px;
+		right: -22px;
+		left: auto;
+		background: $accent;
+		@include pad-lg {
+			width: 235px;
+			height: 235px;
+		}
+		@include phone-md {
+			width: 170px;
+			height: 170px;
+		}
+		@include phone-xs {
+			top: -12px;
+			right: -12px;
+		}
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 435px;
+		height: 435px;
+		bottom: -22px;
+		right: auto;
+		left: -22px;
+		background: #dcca87;
+		z-index: -1;
+		@include desctop-md {
+			bottom: 88px;
+			width: 330px;
+			height: auto;
+		}
+		@include pad-lg {
+			width: 235px;
+			height: 235px;
+			bottom: -20px;
+		}
+		@include phone-md {
+			width: 170px;
+			height: 170px;
+		}
+		@include phone-xs {
+			bottom: -12px;
+			left: -12px;
+		}
+	}
+	img {
+		position: relative;
+		@include desctop-xs {
+			width: 478px;
+			height: auto;
+		}
+		@include pad-lg {
+			width: 378px;
+			height: auto;
+		}
+		@include phone-md {
+			width: 315px;
+		}
+		@include phone-xs {
+			width: 260px;
+		}
+	}
 }
